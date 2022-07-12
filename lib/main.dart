@@ -31,8 +31,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(
             create: (context) =>
                 BottamNavigationBlocBloc()..add(ChangePageEvent(0))),
-        BlocProvider(
-            create: (context) => AppdrawerBloc()..add(HomePageEvent())),
+        BlocProvider(create: (context) => AppdrawerBloc()),
       ],
       child: MaterialApp(
         onGenerateRoute: RouteGenerator.generateRoute,
