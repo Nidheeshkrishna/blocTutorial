@@ -1,13 +1,15 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/Completedetailes.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart' as pathProvider;
+
+import 'bloc/AppDrawerBloc/appdrawer_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,8 +18,6 @@ Future<void> main() async {
   runApp(MyApp());
 }
 
-
-
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
 
@@ -25,18 +25,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider<NetworkBloc>(
+          create: (context) => NetworkBloc()..add(ListenConnection()),
+        ),
         BlocProvider(
             create: (context) =>
-            BottamNavigationBlocBloc()..add(ChangePageEvent(0))),
-      
+                BottamNavigationBlocBloc()..add(ChangePageEvent(0))),
+        BlocProvider(
+            create: (context) => AppdrawerBloc()..add(HomePageEvent())),
       ],
       child: MaterialApp(
-        title: 'Better player demo',
+        onGenerateRoute: RouteGenerator.generateRoute,
+        initialRoute: "/",
+        title: 'Bloc Demo',
         themeMode: ThemeMode.system,
         darkTheme: darkTheme,
         theme: lightTheme,
-         // CompleteDetailes()
-        home: HomePage(),
+        // CompleteDetailes()
+        home: const HomePage(),
       ),
     );
   }

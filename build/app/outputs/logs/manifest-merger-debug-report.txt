@@ -25,6 +25,7 @@ INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_d
 MERGED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
 MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:better_player] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:wakelock] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
@@ -89,6 +90,8 @@ MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/TempFolder/Demos/flut
 MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:better_player] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:better_player] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:20:5-43
@@ -179,6 +182,16 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required
@@ -191,14 +204,6 @@ ADDED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/tra
 		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
 	android:name
 		ADDED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:25:5-68
 	android:name

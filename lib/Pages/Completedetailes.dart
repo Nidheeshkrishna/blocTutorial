@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/completedetailes_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/service_area_bloc_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/validationBloc/validation_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/utilities/HelperTools.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -57,7 +58,11 @@ class CompleteDetailes extends StatelessWidget {
                 if (state is ValidationSuccess) {
                 } else if (state is ValidationFailed) {
                   snackBarWidget(context, state.error, Icons.thumb_down,
-                      const Color.fromARGB(255, 255, 26, 26), 3);
+                      const Color.fromARGB(255, 255, 26, 26), 1);
+
+                  // HelperTools().snackBarWidget(context, state.error, Icons.thumb_down,
+                  //
+                  //     const Color.fromARGB(255, 255, 26, 26), 1);
                 }
               },
               builder: (context, state) {
