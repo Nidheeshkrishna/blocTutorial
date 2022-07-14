@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml",
+            "outputFile": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "/Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/res/values-ne/values-ne.xml",

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:3:4-33:19
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:3:4-33:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:30:5-143:19
@@ -16,17 +16,17 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociu
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:better_player] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:wakelock] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:better_player] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:wakelock] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/77afdf262bed7c1210a02882645b5ae2/jetified-lifecycle-runtime-ktx-2.4.0-beta01/AndroidManifest.xml:17:1-24:12
@@ -65,35 +65,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociu
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:2:5-58
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:2:5-58
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:1-34:12
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-sdk
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:better_player] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:better_player] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:wakelock] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:better_player] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:better_player] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:wakelock] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a2f650a70b204393ba1526e0273d563e/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
@@ -170,20 +170,20 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ociuz/.gradle/
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
 MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:26:5-79
@@ -191,7 +191,7 @@ MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/trans
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+		ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/ociuz/.gradle/caches/transforms-2/files-2.1/570b08bd1076f6c263d4018800c9909d/media-1.4.3/res/values-v24/values-v24.xml",

@@ -1,12 +1,14 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
+// ignore: library_prefixes
 import 'package:path_provider/path_provider.dart' as pathProvider;
 
 import 'bloc/AppDrawerBloc/appdrawer_bloc.dart';
@@ -15,6 +17,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Directory directory = await pathProvider.getApplicationDocumentsDirectory();
   Hive.init(directory.path);
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.deepPurple, statusBarBrightness: Brightness.dark));
   runApp(MyApp());
 }
 
@@ -40,6 +44,7 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.system,
         darkTheme: darkTheme,
         theme: lightTheme,
+
         // CompleteDetailes()
         home: const HomePage(),
       ),
@@ -67,9 +72,9 @@ class MyApp extends StatelessWidget {
   final lightTheme = ThemeData(
     primaryColor: Colors.white,
     //brightness: Brightness.light,
-    backgroundColor: const Color.fromARGB(255, 224, 11, 11),
+
     appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: Colors.deepPurple,
         // This will be applied to the "back" icon
         iconTheme: IconThemeData(color: Colors.red),
         // This will be applied to the action icon buttons that locates on the right side

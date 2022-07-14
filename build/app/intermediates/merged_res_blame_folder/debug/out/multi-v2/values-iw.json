@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ociuz/PROJECTS/TempFolder/Demos/flutter_applicationgoogle_drive/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
+            "outputFile": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "/Users/ociuz/.gradle/caches/transforms-2/files-2.1/260d21a76c021e368c01ef592d91e572/jetified-exoplayer-ui-2.17.1/res/values-iw/values-iw.xml",

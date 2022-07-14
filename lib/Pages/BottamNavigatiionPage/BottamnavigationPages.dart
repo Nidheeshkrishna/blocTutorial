@@ -223,3 +223,33 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     );
   }
 }
+
+class Page5 extends StatelessWidget {
+  const Page5({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      left: true,
+      top: true,
+      child: Scaffold(
+        appBar: AppBar(),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Container(
+                width: 300,
+                height: 90,
+                decoration: const BoxDecoration(
+                  color: Colors.purpleAccent,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(40),
+                    bottomLeft: Radius.circular(40),
+                  ),
+                )),
+          ],
+        ),
+      ),
+    );
+  }
+}
