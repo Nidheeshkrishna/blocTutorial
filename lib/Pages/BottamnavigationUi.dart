@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/AppDrawer.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamNavigatiionPage/BottamnavigationPages.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/person.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
@@ -21,6 +22,13 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+
+    var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    if (kDebugMode) {
+      print(john.age);
+    }
+
     getdata();
   }
 
@@ -35,6 +43,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+  
         drawer: const AppDrawer(),
         bottomNavigationBar:
             BlocBuilder<BottamNavigationBlocBloc, BottamNavigationBlocState>(

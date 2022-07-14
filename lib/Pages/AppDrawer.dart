@@ -12,15 +12,15 @@ class AppDrawer extends StatelessWidget {
       builder: (context, state) {
         return BlocConsumer<AppdrawerBloc, AppdrawerState>(
           listener: (context, state) {
-            if (state is HomePageState) {
+            if (state is AppdrawerInitial) {
+            } else if (state is HomePageState) {
               Navigator.pushNamed(context, "/page3");
-            }
-            if (state is TestPageState) {
+            } else if (state is TestPageState) {
               Navigator.pushNamed(context, "/page2");
             }
           },
           builder: (context, state) {
-            if (state is AppdrawerInitial) {
+            if (state is HomePageEvent) {
               return Scaffold(
                 body: Drawer(
                   child: SizedBox(

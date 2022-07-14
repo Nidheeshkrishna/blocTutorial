@@ -14,7 +14,7 @@ class RouteGenerator {
       case '/page2':
         return MaterialPageRoute(builder: (_) => const Page2());
       case '/page3':
-        return MaterialPageRoute(builder: (_) => const Page5());
+        return MaterialPageRoute(builder: (_) => const Scratchclass());
       case '/AppDrawer':
         return MaterialPageRoute(builder: (_) => const AppDrawer());
 
