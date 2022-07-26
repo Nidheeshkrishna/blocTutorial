@@ -6,24 +6,33 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_applicationgoogle_drive/main.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/TestiMainPage.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  testWidgets('Add and remove a todo', (tester) async {
+    // Build the widget.
+    await tester.pumpWidget(const TodoList());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Enter 'hi' into the TextField.
+    await tester.enterText(find.byType(TextField), 'hi');
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    // Tap the add button.
+    await tester.tap(find.byType(FloatingActionButton));
+
+    // Rebuild the widget with the new item.
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Expect to find the item on screen.
+    expect(find.text('Hello'), findsOneWidget);
+
+    // Swipe the item to dismiss it.
+    await tester.drag(find.byType(Dismissible), const Offset(500.0, 0.0));
+
+    // Build the widget until the dismiss animation ends.
+    await tester.pumpAndSettle();
+
+    // Ensure that the item is no longer on screen.
+    expect(find.text('hi'), findsNothing);
   });
 }

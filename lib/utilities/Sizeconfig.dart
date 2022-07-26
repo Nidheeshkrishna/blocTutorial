@@ -1,27 +1,50 @@
 import 'package:flutter/material.dart';
 
 class SizeConfig {
-  static late MediaQueryData _mediaQueryData;
-  static late double screenWidth;
-  static late double screenHeight;
-  static late double blockSizeHorizontal;
-  static late double blockSizeVertical;
-  static late double _safeAreaHorizontal;
-  static late double _safeAreaVertical;
-  static late double safeBlockHorizontal;
-  static late double safeBlockVertical;
+  static double _screenWidth = 0;
+  static double _screenHeight = 0;
+  static double _blockWidth = 0;
+  static double _blockHeight = 0;
+  static double screenwidth = 0;
+  static double screenheight = 0;
+  static double textMultiplier = 0;
+  static double imageSizeMultiplier = 0;
+  static double heightMultiplier = 0;
+  static double widthMultiplier = 0;
+  static bool isPortrait = true;
+  static bool isMobilePortrait = false;
 
-  void init(BuildContext context) {
-    _mediaQueryData = MediaQuery.of(context);
-    screenWidth = _mediaQueryData.size.width;
-    screenHeight = _mediaQueryData.size.height;
-    blockSizeHorizontal = screenWidth / 100;
-    blockSizeVertical = screenHeight / 100;
-    _safeAreaHorizontal =
-        _mediaQueryData.padding.left + _mediaQueryData.padding.right;
-    _safeAreaVertical =
-        _mediaQueryData.padding.top + _mediaQueryData.padding.bottom;
-    safeBlockHorizontal = (screenWidth - _safeAreaHorizontal) / 100;
-    safeBlockVertical = (screenHeight - _safeAreaVertical) / 100;
+  static double blockSizeHorizontal = 0;
+
+  static double blockSizeVertical = 0;
+
+  void init(BoxConstraints constraints, Orientation orientation) {
+    if (orientation == Orientation.portrait) {
+      _screenWidth = constraints.maxWidth;
+      _screenHeight = constraints.maxHeight;
+      isPortrait = true;
+    } else {
+      _screenHeight = constraints.maxWidth;
+      _screenWidth = constraints.maxHeight;
+      isPortrait = false;
+      isMobilePortrait = false;
+    }
+
+    _blockWidth =
+        // _screenWidth > 600 ? _screenWidth / 170 :
+        _screenWidth / 100;
+    _blockHeight =
+        // _screenWidth > 600 ? _screenHeight / 170 :
+        _screenHeight / 100;
+    screenwidth = _screenWidth;
+    screenheight = _screenHeight;
+    textMultiplier =
+        ((_blockHeight / _blockWidth) * (_blockHeight / _blockWidth));
+
+    imageSizeMultiplier = _blockWidth;
+    heightMultiplier = _blockHeight;
+    widthMultiplier = _blockWidth;
+    blockSizeHorizontal = _screenWidth / 100;
+    blockSizeVertical = _screenHeight / 100;
   }
 }

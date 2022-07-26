@@ -1,23 +1,39 @@
-import 'package:flutter/foundation.dart';
+import 'dart:developer';
+
+import 'package:dots_indicator/dots_indicator.dart';
+import 'package:dynamic_widget/dynamic_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/AppDrawer.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/Widgets/TextFormfield.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/person.dart';
+
 import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/HelperTools.dart';
+import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:getwidget/components/carousel/gf_carousel.dart';
+import 'package:getwidget/getwidget.dart';
 import 'package:lottie/lottie.dart';
 import 'package:scratcher/scratcher.dart';
 
-class Page1 extends StatelessWidget {
+class Page1 extends StatefulWidget {
   const Page1({Key? key}) : super(key: key);
 
+  @override
+  State<Page1> createState() => _Page1State();
+}
+
+class _Page1State extends State<Page1> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) =>
           NotificationCountBloc()..add(ChangeNotificationCount("1")),
       child: Scaffold(
+        drawer: const AppDrawer(),
         appBar: AppBar(
             actions: [
               Stack(
@@ -72,66 +88,87 @@ class Page1 extends StatelessWidget {
             title: const Text(
               "Home Page",
             )),
-        body: Container(
-          color: const Color(0xffC4DFCB),
-          child: Center(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Text(
-                    "Page Number 1",
-                    style: TextStyle(
-                      color: Colors.green[900],
-                      fontSize: 45,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  InkWell(
-                      child: SizedBox(
-                        width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.height * .60,
-                        child: ListView.builder(
-                            shrinkWrap: true,
-                            itemCount: 7,
-                            itemBuilder: (BuildContext context, int index) {
-                              return Image.asset("assets/kalyan.jpg");
-                            }),
+        body: ListView(
+          children: [
+            Container(
+              color: const Color(0xffC4DFCB),
+              child: Center(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      const Text(
+                        "Page Number 1",
                       ),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Page2()));
-                      }),
-                  Visibility(
-                    visible: false,
-                    child: Text(
-                      "Page Number 1",
-                      style: TextStyle(
-                        color: Colors.green[900],
-                        fontSize: 45,
-                        fontWeight: FontWeight.w500,
+                      InkWell(
+                          child: SizedBox(
+                            width: MediaQuery.of(context).size.width,
+                            height: MediaQuery.of(context).size.height * .60,
+                            child: ListView.builder(
+                                shrinkWrap: true,
+                                itemCount: 7,
+                                itemBuilder: (BuildContext context, int index) {
+                                  return Image.asset("assets/kalyan.jpg");
+                                }),
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const Page2()));
+                          }),
+                      Visibility(
+                        visible: false,
+                        child: Text(
+                          "Page Number 1",
+                          style: TextStyle(
+                            color: Colors.green[900],
+                            fontSize: 45,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                  Visibility(
-                    visible: true,
-                    child: Text(
-                      "Page Number 1",
-                      style: TextStyle(
-                        color: Colors.green[900],
-                        fontSize: 45,
-                        fontWeight: FontWeight.w500,
+                      Visibility(
+                        visible: true,
+                        child: Text(
+                          "Page Number 1",
+                          style: TextStyle(
+                            color: Colors.green[900],
+                            fontSize: 45,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
-                ],
+                ),
               ),
             ),
-          ),
+          ],
         ),
       ),
     );
+  }
+
+  var iconJson = {
+    "type": "Row",
+    "mainAxisAlignment": "spaceAround",
+    "children": [
+      {"type": "Icon", "data": "fa.google", "color": "#000000", "size": 36.0},
+      {
+        "type": "Icon",
+        "data": "favorite",
+        "color": "#FFC0CB",
+        "size": 24.0,
+        "semanticLabel": "Text to announce in accessibility modes"
+      },
+      {"type": "Icon", "data": "audiotrack", "color": "#008000", "size": 30.0},
+      {"type": "Icon", "data": "beach_access", "color": "#0000FF", "size": 36.0}
+    ]
+  };
+
+  Future<Widget?> _buildWidget(BuildContext context) async {
+    return DynamicWidgetBuilder.build(
+        iconJson.toString(), context, DefaultClickListener());
   }
 }
 
@@ -247,17 +284,97 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
-    var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
-    if (kDebugMode) {
-      print(john == john2);
-    }
+    // var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // if (kDebugMode) {
+    //   print(john == john2);
+    // }
 
     slidingBoxAnimationController =
         AnimationController(vsync: this, duration: const Duration(seconds: 2));
     slidingAnimation = Tween(begin: -1.0, end: 0.0).animate(CurvedAnimation(
-        parent: slidingBoxAnimationController, curve: Curves.fastOutSlowIn));
+        parent: slidingBoxAnimationController,
+        curve: Curves.fastLinearToSlowEaseIn));
     slidingBoxAnimationController.forward();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
+    return Scaffold(
+      appBar: AppBar(title: const Text("Slide Animation")),
+      body: ListView(
+        children: [
+          Container(
+              color: const Color(0xffC4DFCB),
+              child: AnimatedBuilder(
+                animation: slidingBoxAnimationController,
+                builder: (BuildContext context, Widget? child) {
+                  return Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Transform(
+                        transform: Matrix4.translationValues(
+                            slidingAnimation.value * width, 0.0, 0.0),
+                        child: Center(
+                          child: Container(
+                            height: 200,
+                            width: 300,
+                            color: Colors.red,
+                            child: Image.asset(
+                              "assets/kalyan.jpg",
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              )),
+        ],
+      ),
+    );
+  }
+}
+
+class Page5 extends StatefulWidget {
+  const Page5({Key? key}) : super(key: key);
+
+  @override
+  State<Page5> createState() => _Page5State();
+}
+
+class _Page5State extends State<Page5> with TickerProviderStateMixin {
+  late final Animation<double> _animation;
+  @override
+  void initState() {
+    super.initState();
+    // // var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // // var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // if (kDebugMode) {
+    //   print(john == john2);
+    // }
+
+    late final AnimationController _controller = AnimationController(
+      // duration: const Duration(seconds: 0),
+      animationBehavior: AnimationBehavior.normal,
+      vsync: this,
+    );
+    _animation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.fastOutSlowIn,
+    );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 
   @override
@@ -265,34 +382,41 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(title: const Text("Offer Page")),
-      body: Container(
-          color: const Color(0xffC4DFCB),
-          child: AnimatedBuilder(
-            animation: slidingBoxAnimationController,
-            builder: (BuildContext context, Widget? child) {
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Transform(
-                    transform: Matrix4.translationValues(
-                        slidingAnimation.value * width, 0.0, 0.0),
-                    child: Center(
-                      child: Container(
-                        height: 200,
-                        width: 300,
-                        color: Colors.red,
-                        child: Image.asset(
-                          "assets/kalyan.jpg",
-                          fit: BoxFit.fill,
-                        ),
+      body: ListView(
+        children: [
+          Container(
+            color: const Color(0xffC4DFCB),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                SizeTransition(
+                  sizeFactor: _animation,
+                  axis: Axis.horizontal,
+                  child: Center(
+                    child: Container(
+                      height: 200,
+                      width: 300,
+                      color: Colors.red,
+                      child: Image.asset(
+                        "assets/kalyan.jpg",
+                        fit: BoxFit.fill,
                       ),
                     ),
                   ),
-                ],
-              );
-            },
-          )),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
     );
+  }
+}
+
+class DefaultClickListener implements ClickListener {
+  @override
+  Future<void> onClicked(String? event) async {
+    //print("Receive click event: " + event!);
   }
 }
 
@@ -305,6 +429,31 @@ class Scratchclass extends StatefulWidget {
 
 class _ScratchclassState extends State<Scratchclass> {
   double _opacity = 0.0;
+
+  int sum = 0;
+
+  var activeIndex;
+
+  // late final TextEditingController _passwordController =
+  //     TextEditingController();
+
+  // late final FocusNode _passwordControllerFocus = FocusNode();
+
+  Widget _buildPassword() {
+    return TextFormFieldWidget(
+      hintText: "Password",
+      obscureText: false,
+      textInputType: TextInputType.visiblePassword,
+      actionKeyboard: TextInputAction.done,
+      functionValidate: commonValidation,
+      // controller: _passwordController,
+      // focusNode: _passwordControllerFocus,
+      onSubmitField: () {},
+      parametersValidate: "Please enter password.",
+      prefixIcon: const Icon(Icons.keyboard_hide),
+    );
+  }
+
   @override
   void initState() {
     super.initState();
@@ -320,25 +469,243 @@ class _ScratchclassState extends State<Scratchclass> {
         ),
         automaticallyImplyLeading: false,
       ),
-      body: Container(
-        alignment: Alignment.center,
-        child: ElevatedButton(
-          onPressed: () {
-            scratchDialog(context);
-          },
-          style: ElevatedButton.styleFrom(
-              primary: Colors.purple,
-              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-              textStyle:
-                  const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-          child: const Text(
-            "Scratch Card",
-            style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(width: 200, height: 40, child: _buildPassword()),
+            ),
+            const Text("0"),
+            InkWell(
+              child: const Icon(Icons.add),
+              onTap: () {
+                setState(() {
+                  sum = sum + 1;
+                });
+              },
+            ),
+            Card(
+              child: SizedBox(
+                width: SizeConfig.screenwidth,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.asset(
+                          "assets/gift.png",
+                          height: SizeConfig.screenheight * .20,
+                          width: SizeConfig.screenwidth * .20,
+                          fit: BoxFit.contain,
+                        )),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              alignment: Alignment.center,
+              child: ElevatedButton(
+                onPressed: () {
+                  bool status = checkRestaurentStatus("09:00AM", "09:44AM");
+                  log('Closing Time $status');
+                  // if (kDebugMode) {
+                  //   print("Closing Time" + "$status");
+                  // }
+                  scratchDialog(context);
+                },
+
+                // style: ElevatedButton.styleFrom(
+                //     primary: Colors.purple,
+                //     padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                //     textStyle:
+                //         const TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                child: Text("Scratch Card",
+                    style: AppTextStyle.appFont(
+                        fontWeight: FontWeight.normal, color: Colors.white)),
+              ),
+            ),
+            BlocConsumer<CarasoulBloc, CarasoulState>(
+              listener: ((context, state) {
+                if (state is ChangeCarasoulEvent) {
+                  // final fetchlocation =
+                  //     BlocProvider.of<>(context);
+                  // fetchlocation
+                  //     .add(FetchServiceAraea("9", newValue.toString()));
+                }
+              }),
+              builder: (context, state) {
+                if (state is CarasoulSuccessState) {
+                  return Stack(
+                    children: [
+                      GFCarousel(
+                        items: imageList.map(
+                          (url) {
+                            return Container(
+                              margin: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: const BorderRadius.all(
+                                    Radius.circular(5.0)),
+                                child: Image.network(
+                                  url,
+                                  fit: BoxFit.cover,
+                                  width: SizeConfig.screenwidth,
+                                ),
+                              ),
+                            );
+                          },
+                        ).toList(),
+                        autoPlay: true,
+                        // viewportFraction: 0.1,
+                        aspectRatio: 16 / 9,
+                        enlargeMainPage: true,
+                        onPageChanged: (index) {
+                          BlocProvider.of<CarasoulBloc>(context)
+                              .add(CarasoulSuccEvent(index, ""));
+                        },
+                      ),
+                      Positioned(
+                        left: 100,
+                        bottom: 10,
+                        child: DotsIndicator(
+                          dotsCount: state.imageList.length,
+                          position: state.index.toDouble(),
+                          decorator: const DotsDecorator(
+                            color: Colors.grey,
+                            // Inactive dot colors
+                            activeColor: Colors.blue, // Àctive dot colors
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                } else if (state is CarasouInitial) {
+                  return const SizedBox();
+                } else {
+                  return Container(
+                    width: 200,
+                    height: 40,
+                    color: Colors.red,
+                  );
+                }
+              },
+            ),
+            // GFFloatingWidget(
+            //   child: const GFIconBadge(
+            //       child: GFAvatar(
+            //         size: GFSize.LARGE,
+            //         backgroundImage: AssetImage('assets/kalyan.jpg'),
+            //       ),
+            //       counterChild: GFBadge(
+            //         text: '12',
+            //         shape: GFBadgeShape.circle,
+            //       )),
+            //   body: const Text('body or any kind of widget here..'),
+            //   verticalPosition: MediaQuery.of(context).size.height * 0.2,
+            //   horizontalPosition: MediaQuery.of(context).size.width * 0.8,
+            // ),
+            // const GFImageOverlay(
+            //   height: 200,
+            //   width: 200,
+            //   shape: BoxShape.circle,
+            //   image: AssetImage('assets/kalyan.jpg'),
+            //   boxFit: BoxFit.cover,
+            // )
+          ],
         ),
       ),
     );
+  }
+
+  final List<String> imageList = [
+    "https://cdn.pixabay.com/photo/2017/12/03/18/04/christmas-balls-2995437_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/12/13/00/23/christmas-3015776_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/19/10/55/christmas-market-4705877_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/20/00/03/road-4707345_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/22/04/18/x-mas-4711785__340.jpg",
+    "https://cdn.pixabay.com/photo/2016/11/22/07/09/spruce-1848543__340.jpg"
+  ];
+  bool checkRestaurentStatus(String openTime, String closedTime) {
+    //NOTE: Time should be as given format only
+    //10:00PM
+    //10:00AM
+
+    // 01:60PM ->13:60
+    //Hrs:Min
+    //if AM then its ok but if PM then? 12+time (12+10=22)
+
+    TimeOfDay timeNow = TimeOfDay.now();
+    String openHr = openTime.substring(0, 2);
+    String openMin = openTime.substring(3, 5);
+    String openAmPm = openTime.substring(5);
+    TimeOfDay timeOpen;
+    if (openAmPm == "AM") {
+      //am case
+      if (openHr == "12") {
+        //if 12AM then time is 00
+        timeOpen = TimeOfDay(hour: 00, minute: int.parse(openMin));
+      } else {
+        timeOpen =
+            TimeOfDay(hour: int.parse(openHr), minute: int.parse(openMin));
+      }
+    } else {
+      //pm case
+      if (openHr == "12") {
+//if 12PM means as it is
+        timeOpen =
+            TimeOfDay(hour: int.parse(openHr), minute: int.parse(openMin));
+      } else {
+//add +12 to conv time to 24hr format
+        timeOpen =
+            TimeOfDay(hour: int.parse(openHr) + 12, minute: int.parse(openMin));
+      }
+    }
+
+    String closeHr = closedTime.substring(0, 2);
+    String closeMin = closedTime.substring(3, 5);
+    String closeAmPm = closedTime.substring(5);
+
+    TimeOfDay timeClose;
+
+    if (closeAmPm == "AM") {
+      //am case
+      if (closeHr == "12") {
+        timeClose = TimeOfDay(hour: 0, minute: int.parse(closeMin));
+      } else {
+        timeClose =
+            TimeOfDay(hour: int.parse(closeHr), minute: int.parse(closeMin));
+      }
+    } else {
+      //pm case
+      if (closeHr == "12") {
+        timeClose =
+            TimeOfDay(hour: int.parse(closeHr), minute: int.parse(closeMin));
+      } else {
+        timeClose = TimeOfDay(
+            hour: int.parse(closeHr) + 12, minute: int.parse(closeMin));
+      }
+    }
+
+    int nowInMinutes = timeNow.hour * 60 + timeNow.minute;
+    int openTimeInMinutes = timeOpen.hour * 60 + timeOpen.minute;
+    int closeTimeInMinutes = timeClose.hour * 60 + timeClose.minute;
+
+//handling day change ie pm to am
+    if ((closeTimeInMinutes - openTimeInMinutes) < 0) {
+      closeTimeInMinutes = closeTimeInMinutes + 1440;
+      if (nowInMinutes >= 0 && nowInMinutes < openTimeInMinutes) {
+        nowInMinutes = nowInMinutes + 1440;
+      }
+      if (openTimeInMinutes < nowInMinutes &&
+          nowInMinutes < closeTimeInMinutes) {
+        return true;
+      }
+    } else if (openTimeInMinutes < nowInMinutes &&
+        nowInMinutes < closeTimeInMinutes) {
+      return true;
+    }
+
+    return false;
   }
 
   Future<void> scratchDialog(BuildContext context) {

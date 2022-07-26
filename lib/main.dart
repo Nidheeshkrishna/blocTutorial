@@ -1,12 +1,17 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
+import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/bloc/CounterBloc/bloc/countre_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart' as pathProvider;
 import 'package:responsive_framework/responsive_framework.dart';
@@ -15,19 +20,23 @@ import 'bloc/AppDrawerBloc/appdrawer_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // const String dataBoxName = "data";
   Directory directory = await pathProvider.getApplicationDocumentsDirectory();
   Hive.init(directory.path);
 
-  runApp(MyApp());
+  // Hive.registerAdapter(UserAdapter());
+  // await Hive.openBox<HiveDataMain>(dataBoxName);
+
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
-
+  const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
+        BlocProvider(create: (_) => CountreBlocBloc()),
         BlocProvider<NetworkBloc>(
           create: (context) => NetworkBloc()..add(ListenConnection()),
         ),
@@ -36,64 +45,38 @@ class MyApp extends StatelessWidget {
                 BottamNavigationBlocBloc()..add(ChangePageEvent(0))),
         BlocProvider(create: (context) => AppdrawerBloc()),
         BlocProvider(create: (context) => NotificationCountBloc()),
+        BlocProvider(
+            create: (context) => CarasoulBloc()..add(CarasoulSuccEvent(0, ""))),
       ],
-      child: MaterialApp(
-        builder: (context, child) => ResponsiveWrapper.builder(
-          child,
-          maxWidth: 1200,
-          minWidth: 200,
-          defaultScale: true,
-          breakpoints: [
-            const ResponsiveBreakpoint.resize(200, name: MOBILE),
-            const ResponsiveBreakpoint.autoScale(800, name: TABLET),
-            const ResponsiveBreakpoint.resize(1000, name: DESKTOP),
-          ],
-        ),
-        onGenerateRoute: RouteGenerator.generateRoute,
-        initialRoute: "/",
-        title: 'Bloc Demo',
-        themeMode: ThemeMode.system,
-        darkTheme: darkTheme,
-        theme: lightTheme,
-        // CompleteDetailes()
-        home: const HomePage(),
-      ),
+      child: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+        return OrientationBuilder(builder: (context, orientation) {
+          SizeConfig().init(constraints, orientation);
+          FlutterStatusbarcolor.setStatusBarColor(Colors.deepPurple);
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            builder: (context, child) => ResponsiveWrapper.builder(
+              child,
+              maxWidth: 1200,
+              minWidth: 200,
+              defaultScale: true,
+              breakpoints: [
+                const ResponsiveBreakpoint.resize(200, name: MOBILE),
+                const ResponsiveBreakpoint.autoScale(800, name: TABLET),
+                const ResponsiveBreakpoint.resize(1000, name: DESKTOP),
+              ],
+            ),
+            onGenerateRoute: RouteGenerator.generateRoute,
+            initialRoute: "/",
+            title: 'Bloc Demo',
+            themeMode: ThemeMode.system,
+            darkTheme: AppTheme().getAppThemeDark(),
+            theme: AppTheme().getAppThemeLight(),
+            // CompleteDetailes()
+            home: const HomePage(),
+          );
+        });
+      }),
     );
   }
-
-  final darkTheme = ThemeData(
-    primaryColor: Colors.black,
-    // brightness: Brightness.dark,
-    backgroundColor: const Color(0xFF212121),
-    appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.deepPurple,
-        // This will be applied to the "back" icon
-        iconTheme: IconThemeData(color: Colors.red),
-        // This will be applied to the action icon buttons that locates on the right side
-        actionsIconTheme: IconThemeData(color: Colors.amber),
-        centerTitle: false,
-        elevation: 15,
-        titleTextStyle: TextStyle(color: Colors.lightBlueAccent)),
-    dividerColor: Colors.black12,
-    colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
-        .copyWith(secondary: Colors.white),
-  );
-
-  final lightTheme = ThemeData(
-    primaryColor: Colors.white,
-    //brightness: Brightness.light,
-    backgroundColor: const Color.fromARGB(255, 224, 11, 11),
-    appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.greenAccent,
-        // This will be applied to the "back" icon
-        iconTheme: IconThemeData(color: Colors.red),
-        // This will be applied to the action icon buttons that locates on the right side
-        actionsIconTheme: IconThemeData(color: Colors.amber),
-        centerTitle: false,
-        elevation: 15,
-        titleTextStyle: TextStyle(color: Colors.lightBlueAccent)),
-    dividerColor: Colors.white54,
-    colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
-        .copyWith(secondary: Colors.black),
-  );
 }

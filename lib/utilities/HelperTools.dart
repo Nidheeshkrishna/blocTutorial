@@ -28,4 +28,15 @@ class HelperTools {
     );
     ScaffoldMessenger.of(context).showSnackBar(snackbar);
   }
+
+  // static Future<bool> displayToast(String message) {
+  //   return Fluttertoast.showToast(
+  //       msg: message,
+  //       toastLength: Toast.LENGTH_LONG,
+  //       gravity: ToastGravity.BOTTOM,
+  //       timeInSecForIos: 2,
+  //       backgroundColor: primaryColor,
+  //       textColor: Colors.white,
+  //       fontSize: 14.0);
+  // }
 }

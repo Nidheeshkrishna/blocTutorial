@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:bloc/bloc.dart';
 import 'package:data_connection_checker_tv/data_connection_checker.dart';
 import 'package:meta/meta.dart';

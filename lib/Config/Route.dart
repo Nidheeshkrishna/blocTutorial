@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamNavigatiionPage/BottamnavigationPages.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/FreezedHomePage.dart';
 
 import '../Pages/AppDrawer.dart';
 
@@ -12,9 +13,13 @@ class RouteGenerator {
       case '/page1':
         return MaterialPageRoute(builder: (_) => const Page1());
       case '/page2':
-        return MaterialPageRoute(builder: (_) => const Page2());
+        return MaterialPageRoute(builder: (_) => const Page4());
+      //CallInheritedWidget
       case '/page3':
-        return MaterialPageRoute(builder: (_) => const Scratchclass());
+        return MaterialPageRoute(
+            builder: (_) => const FreezedHomePage(
+                  title: 'Freezed',
+                ));
       case '/AppDrawer':
         return MaterialPageRoute(builder: (_) => const AppDrawer());
 
