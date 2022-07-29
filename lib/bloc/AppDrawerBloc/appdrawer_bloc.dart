@@ -11,6 +11,14 @@ class AppdrawerBloc extends Bloc<AppdrawerEvent, AppdrawerState> {
         emit(HomePageState());
       } else if (event is SamplePageEvent) {
         emit(TestPageState());
+      } else if (event is ContextlessEvent) {
+        emit(ContextlessState());
+      } else if (event is RewardEvent) {
+        emit(RewardState());
+      } else if (event is CounterPageEvent) {
+        emit(CounterPageState());
+      } else if (event is InheritedWidgetEvent) {
+        emit(InheritedWidgetState());
       }
     });
   }

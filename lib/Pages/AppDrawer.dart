@@ -17,6 +17,14 @@ class AppDrawer extends StatelessWidget {
               Navigator.pushNamed(context, "/page3");
             } else if (state is TestPageState) {
               Navigator.pushNamed(context, "/page2");
+            } else if (state is ContextlessState) {
+              Navigator.pushNamed(context, "/contextless");
+            } else if (state is RewardState) {
+              Navigator.pushNamed(context, "/reward");
+            } else if (state is InheritedWidgetState) {
+              Navigator.pushNamed(context, "/Inheritedwidget");
+            } else if (state is CounterPageState) {
+              Navigator.pushNamed(context, "/counterpage");
             }
           },
           builder: (context, state) {
@@ -50,8 +58,39 @@ class AppDrawer extends StatelessWidget {
                                 ),
                                 ListTile(
                                   leading: const Icon(Icons.exit_to_app),
-                                  title: const Text('Logout'),
+                                  title: const Text('Contextless'),
                                   onTap: () {
+                                    blocdata.add(ContextlessEvent());
+                                    // context
+                                    //     .bloc<AuthenticationBloc>()
+                                    //     .add(AuthenticationLogoutRequested());
+                                  },
+                                ),
+                                ListTile(
+                                  leading: const Icon(Icons.exit_to_app),
+                                  title: const Text('Reward'),
+                                  onTap: () {
+                                    blocdata.add(RewardEvent());
+                                    // context
+                                    //     .bloc<AuthenticationBloc>()
+                                    //     .add(AuthenticationLogoutRequested());
+                                  },
+                                ),
+                                ListTile(
+                                  leading: const Icon(Icons.exit_to_app),
+                                  title: const Text('InheritedWidget'),
+                                  onTap: () {
+                                    blocdata.add(InheritedWidgetEvent());
+                                    // context
+                                    //     .bloc<AuthenticationBloc>()
+                                    //     .add(AuthenticationLogoutRequested());
+                                  },
+                                ),
+                                ListTile(
+                                  leading: const Icon(Icons.exit_to_app),
+                                  title: const Text('CounterPage'),
+                                  onTap: () {
+                                    blocdata.add(CounterPageEvent());
                                     // context
                                     //     .bloc<AuthenticationBloc>()
                                     //     .add(AuthenticationLogoutRequested());
@@ -93,8 +132,39 @@ class AppDrawer extends StatelessWidget {
                             ),
                             ListTile(
                               leading: const Icon(Icons.exit_to_app),
-                              title: const Text('Logout'),
+                              title: const Text('Contextless'),
                               onTap: () {
+                                blocdata.add(ContextlessEvent());
+                                // context
+                                //     .bloc<AuthenticationBloc>()
+                                //     .add(AuthenticationLogoutRequested());
+                              },
+                            ),
+                            ListTile(
+                              leading: const Icon(Icons.exit_to_app),
+                              title: const Text('Reward'),
+                              onTap: () {
+                                blocdata.add(RewardEvent());
+                                // context
+                                //     .bloc<AuthenticationBloc>()
+                                //     .add(AuthenticationLogoutRequested());
+                              },
+                            ),
+                            ListTile(
+                              leading: const Icon(Icons.exit_to_app),
+                              title: const Text('InheritedWidget'),
+                              onTap: () {
+                                blocdata.add(InheritedWidgetEvent());
+                                // context
+                                //     .bloc<AuthenticationBloc>()
+                                //     .add(AuthenticationLogoutRequested());
+                              },
+                            ),
+                            ListTile(
+                              leading: const Icon(Icons.exit_to_app),
+                              title: const Text('CounterPage'),
+                              onTap: () {
+                                blocdata.add(CounterPageEvent());
                                 // context
                                 //     .bloc<AuthenticationBloc>()
                                 //     .add(AuthenticationLogoutRequested());

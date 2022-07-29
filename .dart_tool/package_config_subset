@@ -270,6 +270,10 @@ geolocator_windows
 2.15
 file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_windows-0.1.1/
 file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_windows-0.1.1/lib/
+get_it
+2.12
+file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-7.2.0/
+file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/get_it-7.2.0/lib/
 getwidget
 2.12
 file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/getwidget-3.0.1/
@@ -538,6 +542,10 @@ watcher
 2.14
 file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/watcher-1.0.1/
 file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/watcher-1.0.1/lib/
+wave
+2.12
+file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/wave-0.2.2/
+file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/wave-0.2.2/lib/
 web_socket_channel
 2.12
 file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.2.0/

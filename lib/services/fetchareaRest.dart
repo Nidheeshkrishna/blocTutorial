@@ -20,14 +20,18 @@ Future<GetLocationModel> fetchlocation(String cityID, String pincode) async {
     headers: {'Content-Type': 'application/json'},
     body: jsonEncode(data),
   );
-  if (response.statusCode == 200) {
-    var responseJson = json.decode(response.body);
-    if (kDebugMode) {
-      print('responseJson : $responseJson');
-    }
+  try {
+    if (response.statusCode == 200) {
+      var responseJson = json.decode(response.body);
+      if (kDebugMode) {
+        print('responseJson : $responseJson');
+      }
 
-    return GetLocationModel.fromMap(jsonDecode(response.body));
-  } else {
-    throw Exception('Failed ');
+      return GetLocationModel.fromMap(jsonDecode(response.body));
+    } else {
+      throw Exception('Failed ');
+    }
+  } catch (error) {
+    throw Exception(error);
   }
 }

@@ -9,3 +9,11 @@ abstract class AppdrawerEvent extends Equatable {
 class HomePageEvent extends AppdrawerEvent {}
 
 class SamplePageEvent extends AppdrawerEvent {}
+
+class ContextlessEvent extends AppdrawerEvent {}
+
+class RewardEvent extends AppdrawerEvent {}
+
+class InheritedWidgetEvent extends AppdrawerEvent {}
+
+class CounterPageEvent extends AppdrawerEvent {}

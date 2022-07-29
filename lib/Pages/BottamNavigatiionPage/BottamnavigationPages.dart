@@ -8,7 +8,6 @@ import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/AppDrawer.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/Widgets/TextFormfield.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
-
 import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/HelperTools.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
@@ -193,38 +192,18 @@ class Page2 extends StatelessWidget {
         if (state is ConnectionSuccess) {
           return Container(
             color: const Color(0xffC4DFCB),
-            child: Hero(
-              tag: "demo1",
-              flightShuttleBuilder: (flightContext, animation, direction,
-                  fromContext, toContext) {
-                return const Icon(
-                  Icons.access_alarm_rounded,
-                  size: 150.0,
-                );
-              },
-              child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * .60,
-                  child: SvgPicture.asset("assets/svgold.svg")),
-            ),
+            child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * .60,
+                child: SvgPicture.asset("assets/svgold.svg")),
           );
         } else if (state is ConnectionFailure) {
           return Container(
             color: const Color(0xffC4DFCB),
-            child: Hero(
-              tag: "demo1",
-              flightShuttleBuilder: (flightContext, animation, direction,
-                  fromContext, toContext) {
-                return const Icon(
-                  Icons.access_alarm_rounded,
-                  size: 150.0,
-                );
-              },
-              child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * .60,
-                  child: const Icon(Icons.cloud_off_outlined)),
-            ),
+            child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * .60,
+                child: const Icon(Icons.cloud_off_outlined)),
           );
         } else {
           return Container();

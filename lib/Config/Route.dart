@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/AlbumHomePage.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamNavigatiionPage/BottamnavigationPages.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/FreezedHomePage.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/ContextLessNavigation/ContextLessNavigationPage.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/InheritedPages.dart/CallInheritedPage.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/RewardsPage.dart';
 
 import '../Pages/AppDrawer.dart';
 
@@ -15,11 +18,20 @@ class RouteGenerator {
       case '/page2':
         return MaterialPageRoute(builder: (_) => const Page4());
       //CallInheritedWidget
+      // FreezedHomePage(
+      //             title: 'Freezed',
+      //           )
       case '/page3':
+        return MaterialPageRoute(builder: (_) => const Page3());
+      case '/reward':
+        return MaterialPageRoute(builder: (_) => const RewardPag());
+      case '/Inheritedwidget':
+        return MaterialPageRoute(builder: (_) => const CallInheritedWidget());
+      case '/contextless':
         return MaterialPageRoute(
-            builder: (_) => const FreezedHomePage(
-                  title: 'Freezed',
-                ));
+            builder: (_) => const ContextLessNavigationPage());
+      case '/counterpage':
+        return MaterialPageRoute(builder: (_) => const AlbumsScreen());
       case '/AppDrawer':
         return MaterialPageRoute(builder: (_) => const AppDrawer());
 

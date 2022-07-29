@@ -28,6 +28,7 @@ class Address with _$Address {
     @Default('') String suite,
     @Default('') String city,
     @Default('') String zipcode,
+
     //Geo? geo,
   }) = _Address;
 

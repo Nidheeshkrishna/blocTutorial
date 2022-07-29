@@ -33,7 +33,9 @@ class _MyHomePageState extends State<FreezedHomePage> {
     } on DioError catch (e) {
       final errorMessage = DioException.fromDioError(e).toString();
     } catch (e) {
-      print(e);
+      if (kDebugMode) {
+        print(e);
+      }
     }
   }
 
