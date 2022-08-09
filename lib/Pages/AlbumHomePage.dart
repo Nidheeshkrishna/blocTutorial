@@ -12,16 +12,7 @@ class AlbumsScreen extends StatefulWidget {
 }
 
 class _AlbumsScreenState extends State<AlbumsScreen> {
-  //
-  @override
-  void initState() {
-    super.initState();
-    //-_loadAlbums();
-    // -_loadAlbums();
-  }
-
-  // _loadAlbums() async {}
-
+  final LoadingOverlay _loadingOverlay = LoadingOverlay();
   @override
   Widget build(BuildContext context) {
     //context.bloc<AlbumFreezedBlocBloc>().add( const AlbumFreezedBlocEvent.DataLoaded(),
@@ -43,10 +34,20 @@ class _AlbumsScreenState extends State<AlbumsScreen> {
   _body() {
     return Column(
       children: [
-        BlocBuilder<AlbumFreezedBlocBloc, AlbumFreezedBlocState>(
-            builder: (BuildContext context, state) {
+        BlocConsumer<AlbumFreezedBlocBloc, AlbumFreezedBlocState>(
+            listener: (context, state) {
+          state.when(initial: () {
+            _loadingOverlay.show(context);
+          }, AlbumLoading: () {
+            _loadingOverlay.show(context);
+          }, AlbumsLoaded: (_) {
+            _loadingOverlay.hide();
+          }, AlbumsListError: (_) {
+            _loadingOverlay.hide();
+          });
+        }, builder: (BuildContext context, state) {
           return state.when(AlbumLoading: () {
-            return const CircularProgressIndicator();
+            return Container();
           }, AlbumsListError: (String error) {
             return Center(
               child: Container(
@@ -77,7 +78,45 @@ class _AlbumsScreenState extends State<AlbumsScreen> {
             return const CircularProgressIndicator();
           });
         }),
+        ElevatedButton(
+            onPressed: () {
+              _loadingOverlay.show(context);
+              BlocProvider.of<AlbumFreezedBlocBloc>(context)
+                  .add(const AlbumFreezedBlocEvent.DataLoaded());
+              _loadingOverlay.hide();
+            },
+            child: const Text("Refresh"))
       ],
     );
+  }
+}
+
+class LoadingOverlay {
+  OverlayEntry? _overlay;
+
+  LoadingOverlay();
+
+  void show(BuildContext context) {
+    if (_overlay == null) {
+      _overlay = OverlayEntry(
+        // replace with your own layout
+        builder: (context) => const ColoredBox(
+          color: Color.fromARGB(78, 0, 0, 0),
+          child: Center(
+            child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation(Colors.red),
+            ),
+          ),
+        ),
+      );
+      Overlay.of(context)!.insert(_overlay!);
+    }
+  }
+
+  void hide() {
+    if (_overlay != null) {
+      _overlay!.remove();
+      _overlay = null;
+    }
   }
 }

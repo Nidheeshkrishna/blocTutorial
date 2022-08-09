@@ -5,6 +5,7 @@ import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart'
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/MyBlocObserver.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/CounterBloc/bloc/countre_bloc_bloc.dart';
@@ -13,6 +14,7 @@ import 'package:flutter_applicationgoogle_drive/bloc/bloc/album_freezed_bloc_blo
 import 'package:flutter_applicationgoogle_drive/utilities/NavigationService.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
@@ -26,15 +28,25 @@ Future<void> main() async {
   // const String dataBoxName = "data";
   Directory directory = await pathProvider.getApplicationDocumentsDirectory();
   Hive.init(directory.path);
-
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   // Hive.registerAdapter(UserAdapter());
   // await Hive.openBox<HiveDataMain>(dataBoxName);
-
-  runApp(const MyApp());
+  var initialRoute = '/page2';
+  int i = 0;
+  if (i == 0) {
+    initialRoute = '/';
+  }
+  BlocOverrides.runZoned(
+      () => runApp(MyApp(
+            initialRoute: initialRoute,
+          )),
+      blocObserver: MyBlocObserver());
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final String initialRoute;
+  const MyApp({Key? key, required this.initialRoute}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -44,6 +56,25 @@ class _MyAppState extends State<MyApp> {
   GetIt locator = GetIt.instance;
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
   late NavigationService navigationService;
+  @override
+  void initState() {
+    super.initState();
+    initialization();
+  }
+
+  void initialization() async {
+    // This is where you can initialize the resources needed by your app while
+    // the splash screen is displayed.  Remove the following example because
+    // delaying the user experience is a bad design practice!
+    // ignore_for_file: avoid_print
+
+    await Future.delayed(const Duration(seconds: 1));
+    print('go!');
+
+    FlutterNativeSplash.remove();
+
+    //var isUserLoggedIn = await User.IsUserLoggedIn();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -81,12 +112,13 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
               onGenerateRoute: RouteGenerator.generateRoute,
-              initialRoute: "/",
+              initialRoute: widget.initialRoute,
               title: 'Bloc Demo',
               themeMode: ThemeMode.system,
               darkTheme: AppTheme().getAppThemeDark(),
               theme: AppTheme().getAppThemeLight(),
               // CompleteDetailes()
+
               home: const HomePage(),
               navigatorKey: NavigationService.navigatorKey);
         });

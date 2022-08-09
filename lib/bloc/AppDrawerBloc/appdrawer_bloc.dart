@@ -19,6 +19,10 @@ class AppdrawerBloc extends Bloc<AppdrawerEvent, AppdrawerState> {
         emit(CounterPageState());
       } else if (event is InheritedWidgetEvent) {
         emit(InheritedWidgetState());
+      } else if (event is FreezedEvent) {
+        emit(FreezedState());
+      } else if (event is CalenderEvent) {
+        emit(CalenderState());
       }
     });
   }

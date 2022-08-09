@@ -25,7 +25,7 @@ class _RewardPagState extends State<RewardPag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 253, 227, 186),
+      //backgroundColor: const Color.fromARGB(255, 253, 227, 186),
       appBar: AppBar(title: const Text("Reward page")),
       body: SizedBox(
         width: SizeConfig.screenwidth,
@@ -33,91 +33,166 @@ class _RewardPagState extends State<RewardPag> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Stack(
+              Column(
                 children: [
-                  Opacity(
-                    //semi red clippath with more height and with 0.5 opacity
-                    opacity: 0.5,
-                    child: ClipPath(
-                      clipper: GreenClipper(), //set our custom wave clipper
-                      child: Container(
-                        color: Colors.deepOrangeAccent,
-                        height: 200,
+                  Stack(
+                    children: [
+                      Opacity(
+                        //semi red clippath with more height and with 0.5 opacity
+                        opacity: 0.5,
+                        child: ClipPath(
+                          clipper: GreenClipper(), //set our custom wave clipper
+                          child: Container(
+                            color: Colors.deepOrangeAccent,
+                            height: 200,
+                          ),
+                        ),
                       ),
-                    ),
+                      ClipPath(
+                          clipper: GreenClipper(),
+                          child: Container(
+                              padding: const EdgeInsets.only(bottom: 0),
+                              // color: Colors.red,
+                              height: 180,
+                              width: SizeConfig.screenwidth,
+                              alignment: Alignment.center,
+                              child: Image.asset(
+                                "assets/Mask Group 5.png",
+                                width: SizeConfig.screenwidth * 99,
+                                height: 180,
+                                fit: BoxFit.cover,
+                              ))),
+                    ],
                   ),
-                  ClipPath(
-                      clipper: GreenClipper(),
-                      child: Container(
-                          padding: const EdgeInsets.only(bottom: 2),
-                          // color: Colors.red,
-                          height: 180,
-                          width: SizeConfig.screenwidth,
-                          alignment: Alignment.center,
-                          child: Image.asset(
-                            "assets/images (1).jpeg",
-                            width: SizeConfig.screenwidth * 99,
-                            height: 180,
-                            fit: BoxFit.cover,
-                          ))),
                 ],
               ),
-              Container(
-                child: GridView.builder(
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 4.0,
-                            mainAxisSpacing: 4.0),
-                    shrinkWrap: true,
-                    physics: const ScrollPhysics(),
-                    itemCount: 10,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(top: 8.0),
-                        child: SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.width * 0.6,
-                          child: InkWell(
-                            onTap: () {
-                              scratchDialog1(context);
-                            },
-                            child: Card(
-                              elevation: 2,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15.0),
+              Column(
+                children: [
+                  SizedBox(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Card(
+                          elevation: 10,
+                          clipBehavior: Clip.hardEdge,
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(25),
+                                bottomLeft: Radius.circular(25),
+                                bottomRight: Radius.circular(25),
+                                topLeft: Radius.circular(25)),
+                          ),
+                          shadowColor: Colors.blueAccent,
+                          child: Stack(
+                            children: [
+                              Image.asset(
+                                "assets/15248.png",
+                                width: 60,
+                                height: 100,
+                                fit: BoxFit.fill,
                               ),
-                              child: SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.5,
-                                width: MediaQuery.of(context).size.width * 0.6,
-                                child: ListView(
+                              SizedBox(
+                                width: SizeConfig.widthMultiplier * 95,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    // const Text(
-                                    //   "Hurray! you won",
-                                    //   style: TextStyle(fontSize: 20),
-                                    // ),
                                     Image.asset(
-                                      "assets/gift.jpeg",
+                                      "assets/rupee.jpeg",
+                                      width: 60,
+                                      height: 60,
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(left: 20.0),
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "Total Rewards ",
+                                            style: TextStyle(
+                                                fontSize:
+                                                    SizeConfig.widthMultiplier *
+                                                        6),
+                                          ),
+                                          RichText(
+                                            text: TextSpan(
+                                              style: const TextStyle(
+                                                  color: Colors.black,
+                                                  fontSize: 36),
+                                              children: <TextSpan>[
+                                                const TextSpan(
+                                                    text: '₹ ',
+                                                    style: TextStyle(
+                                                        color: Colors.black)),
+                                                TextSpan(
+                                                    text: '500',
+                                                    style: TextStyle(
+                                                        fontSize: SizeConfig
+                                                                .widthMultiplier *
+                                                            6)),
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Image.asset(
+                                      "assets/15248.png",
                                       width: 100,
                                       height: 100,
+                                      fit: BoxFit.fill,
                                     ),
-                                    Text(
-                                      "Text factor",
-                                      style: TextStyle(
-                                          fontSize: 20 *
-                                              MediaQuery.of(context)
-                                                  .textScaleFactor *
-                                              .5),
-                                    )
                                   ],
+                                ),
+                              ),
+                              Image.asset(
+                                "assets/15248.png",
+                                width: 100,
+                                height: 100,
+                                fit: BoxFit.fill,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 4.0,
+                              mainAxisSpacing: 4.0),
+                      shrinkWrap: true,
+                      physics: const ScrollPhysics(),
+                      itemCount: 10,
+                      itemBuilder: (BuildContext context, int index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.3,
+                            width: MediaQuery.of(context).size.width * 0.6,
+                            child: InkWell(
+                              onTap: () {
+                                scratchDialog1(context);
+                              },
+                              child: Card(
+                                elevation: 2,
+                                clipBehavior: Clip.hardEdge,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15.0),
+                                ),
+                                child: Image.asset(
+                                  "assets/ScratchBg.png",
+                                  width: 300,
+                                  height: 200,
+                                  fit: BoxFit.fill,
                                 ),
                               ),
                             ),
                           ),
-                        ),
-                      );
-                    }),
+                        );
+                      }),
+                ],
               ),
             ],
           ),
@@ -125,26 +200,6 @@ class _RewardPagState extends State<RewardPag> {
       ),
     );
   }
-
-  //  Scratcher(
-  //                           color: Colors.cyan,
-  //                           accuracy: ScratchAccuracy.low,
-  //                           threshold: 20,
-  //                           brushSize: 80,
-  //                           onChange: (value) {
-  //                             if (value == 100) {
-  //                               _controllerTopCenter.play();
-  //                             }
-  //                           },
-  //                           onThreshold: () {
-  //                             setState(() {
-  //                               _opacity = 1;
-  //                             });
-  //                           },
-  //                           onScratchEnd: () {},
-  //                           child: AnimatedOpacity(
-  //                             duration: const Duration(milliseconds: 50),
-  //                             opacity: _opacity,));
 
   Future<void> scratchDialog(BuildContext context) {
     return showDialog(
@@ -179,7 +234,7 @@ class _RewardPagState extends State<RewardPag> {
                         enabled: true,
                         rebuildOnResize: true,
                         image: Image.asset(
-                          "assets/scratchandwin.jpeg",
+                          "assets/Mask Group 5.png",
                           height: MediaQuery.of(context).size.height * 0.2,
                           width: MediaQuery.of(context).size.width * 0.6,
                           fit: BoxFit.fill,
@@ -299,12 +354,14 @@ class _RewardPagState extends State<RewardPag> {
                           border: Border.all(color: Colors.white),
                           borderRadius:
                               const BorderRadius.all(Radius.circular(20))),
+                      height: MediaQuery.of(context).size.height * 0.2,
+                      width: MediaQuery.of(context).size.width * 0.6,
                       child: Scratcher(
                         accuracy: ScratchAccuracy.low,
                         threshold: 30,
                         brushSize: 40,
                         image: Image.asset(
-                          "assets/scratchandwin.jpeg",
+                          "assets/ScratchBg.png",
                           height: MediaQuery.of(context).size.height * 0.2,
                           width: MediaQuery.of(context).size.width * 0.6,
                           fit: BoxFit.fill,
@@ -354,13 +411,6 @@ class _RewardPagState extends State<RewardPag> {
                                         letterSpacing: 1,
                                         color: Colors.blue),
                                   ),
-                                ),
-                                const Text(
-                                  "\$10",
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 16,
-                                      color: Colors.blue),
                                 ),
                               ],
                             ),

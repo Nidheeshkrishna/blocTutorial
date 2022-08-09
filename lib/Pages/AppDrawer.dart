@@ -25,6 +25,8 @@ class AppDrawer extends StatelessWidget {
               Navigator.pushNamed(context, "/Inheritedwidget");
             } else if (state is CounterPageState) {
               Navigator.pushNamed(context, "/counterpage");
+            } else if (state is FreezedState) {
+              Navigator.pushNamed(context, "/FreezedClass");
             }
           },
           builder: (context, state) {
@@ -89,6 +91,16 @@ class AppDrawer extends StatelessWidget {
                                 ListTile(
                                   leading: const Icon(Icons.exit_to_app),
                                   title: const Text('CounterPage'),
+                                  onTap: () {
+                                    blocdata.add(CounterPageEvent());
+                                    // context
+                                    //     .bloc<AuthenticationBloc>()
+                                    //     .add(AuthenticationLogoutRequested());
+                                  },
+                                ),
+                                ListTile(
+                                  leading: const Icon(Icons.exit_to_app),
+                                  title: const Text('Freezed Class Api'),
                                   onTap: () {
                                     blocdata.add(CounterPageEvent());
                                     // context
@@ -169,7 +181,27 @@ class AppDrawer extends StatelessWidget {
                                 //     .bloc<AuthenticationBloc>()
                                 //     .add(AuthenticationLogoutRequested());
                               },
-                            )
+                            ),
+                            ListTile(
+                              leading: const Icon(Icons.exit_to_app),
+                              title: const Text('Freezed Class Api'),
+                              onTap: () {
+                                blocdata.add(FreezedEvent());
+                                // context
+                                //     .bloc<AuthenticationBloc>()
+                                //     .add(AuthenticationLogoutRequested());
+                              },
+                            ),
+                            ListTile(
+                              leading: const Icon(Icons.calendar_month),
+                              title: const Text('Calender'),
+                              onTap: () {
+                                blocdata.add(CalenderEvent());
+                                // context
+                                //     .bloc<AuthenticationBloc>()
+                                //     .add(AuthenticationLogoutRequested());
+                              },
+                            ),
                           ],
                         ),
                       ),

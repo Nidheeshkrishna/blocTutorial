@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v31/values-night-v31.xml",
+            "map": [
+                {
+                    "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/values-night-v31/styles.xml",
+                    "from": {
+                        "startLines": "3,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "173,-1",
+                        "endLines": "10,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "712,-1"
+                    },
+                    "to": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,599",
+                        "endLines": "9,12",
+                        "endColumns": "12,12",
+                        "endOffsets": "594,763"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -12,6 +12,7 @@ import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bl
 import 'package:flutter_applicationgoogle_drive/utilities/HelperTools.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:getwidget/components/carousel/gf_carousel.dart';
 import 'package:getwidget/getwidget.dart';
@@ -26,6 +27,28 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    //initialization();
+  }
+
+  void initialization() async {
+    // This is where you can initialize the resources needed by your app while
+    // the splash screen is displayed.  Remove the following example because
+    // delaying the user experience is a bad design practice!
+    // ignore_for_file: avoid_print
+    print('ready in 3...');
+    await Future.delayed(const Duration(seconds: 1));
+    print('ready in 2...');
+    await Future.delayed(const Duration(seconds: 1));
+    print('ready in 1...');
+    await Future.delayed(const Duration(seconds: 1));
+    print('go!');
+    FlutterNativeSplash.remove();
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -95,26 +118,64 @@ class _Page1State extends State<Page1> {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      const Text(
+                      Text(
                         "Page Number 1",
+                        style: TextStyle(
+                            fontSize: MediaQuery.of(context).textScaleFactor *
+                                MediaQuery.of(context).size.width *
+                                .060),
                       ),
                       InkWell(
-                          child: SizedBox(
-                            width: MediaQuery.of(context).size.width,
-                            height: MediaQuery.of(context).size.height * .60,
-                            child: ListView.builder(
-                                shrinkWrap: true,
-                                itemCount: 7,
-                                itemBuilder: (BuildContext context, int index) {
-                                  return Image.asset("assets/kalyan.jpg");
-                                }),
-                          ),
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const Page2()));
-                          }),
+                        child: SizedBox(
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.height * .60,
+                          child: ListView.builder(
+                              shrinkWrap: true,
+                              itemCount: 7,
+                              itemBuilder: (BuildContext context, int index) {
+                                return InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  HeroDemoPage(index: index)));
+                                    },
+                                    child: InteractiveViewer(
+                                      // boundary of image
+                                      boundaryMargin: const EdgeInsets.all(20),
+                                      minScale: 0.1,
+                                      maxScale: 1.6,
+                                      child: SizedBox(
+                                        height: 180,
+                                        width: 500,
+                                        child: Hero(
+                                            tag: 'imageHero' + index.toString(),
+                                            createRectTween: (begin, end) {
+                                              return _createRectTween(
+                                                  begin, end);
+
+                                              // CircularTween(
+                                              //     begin: begin, end: end);
+                                            },
+                                            flightShuttleBuilder: (
+                                              BuildContext flightContext,
+                                              Animation<double> animation,
+                                              HeroFlightDirection
+                                                  flightDirection,
+                                              BuildContext fromHeroContext,
+                                              BuildContext toHeroContext,
+                                            ) {
+                                              return Image.asset(
+                                                  "assets/kalyan.jpg");
+                                            },
+                                            child: Image.asset(
+                                                "assets/kalyan.jpg")),
+                                      ),
+                                    ));
+                              }),
+                        ),
+                      ),
                       Visibility(
                         visible: false,
                         child: Text(
@@ -148,26 +209,52 @@ class _Page1State extends State<Page1> {
     );
   }
 
-  var iconJson = {
-    "type": "Row",
-    "mainAxisAlignment": "spaceAround",
-    "children": [
-      {"type": "Icon", "data": "fa.google", "color": "#000000", "size": 36.0},
-      {
-        "type": "Icon",
-        "data": "favorite",
-        "color": "#FFC0CB",
-        "size": 24.0,
-        "semanticLabel": "Text to announce in accessibility modes"
-      },
-      {"type": "Icon", "data": "audiotrack", "color": "#008000", "size": 30.0},
-      {"type": "Icon", "data": "beach_access", "color": "#0000FF", "size": 36.0}
-    ]
-  };
+  static RectTween _createRectTween(Rect? begin, Rect? end) {
+    return CustomRectTween(begin: begin, end: end);
+  }
+}
 
-  Future<Widget?> _buildWidget(BuildContext context) async {
-    return DynamicWidgetBuilder.build(
-        iconJson.toString(), context, DefaultClickListener());
+var iconJson = {
+  "type": "Row",
+  "mainAxisAlignment": "spaceAround",
+  "children": [
+    {"type": "Icon", "data": "fa.google", "color": "#000000", "size": 36.0},
+    {
+      "type": "Icon",
+      "data": "favorite",
+      "color": "#FFC0CB",
+      "size": 24.0,
+      "semanticLabel": "Text to announce in accessibility modes"
+    },
+    {"type": "Icon", "data": "audiotrack", "color": "#008000", "size": 30.0},
+    {"type": "Icon", "data": "beach_access", "color": "#0000FF", "size": 36.0}
+  ]
+};
+
+Future<Widget?> _buildWidget(BuildContext context) async {
+  return DynamicWidgetBuilder.build(
+      iconJson.toString(), context, DefaultClickListener());
+}
+
+class CircularTween extends RectTween {
+  @override
+  final Rect? begin;
+  @override
+  final Rect? end;
+
+  CircularTween({
+    required this.begin,
+    required this.end,
+  });
+
+  @override
+  Rect lerp(double t) {
+    double startWidthCenter = begin!.left + (begin!.width / 2);
+    double startHeightCenter = begin!.top + (begin!.height / 2);
+    return Rect.fromCircle(
+      center: Offset(startWidthCenter, startHeightCenter),
+      radius: 100,
+    );
   }
 }
 
@@ -195,7 +282,9 @@ class Page2 extends StatelessWidget {
             child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * .60,
-                child: SvgPicture.asset("assets/svgold.svg")),
+                child: Hero(
+                    tag: 'imageHero',
+                    child: SvgPicture.asset("assets/svgold.svg"))),
           );
         } else if (state is ConnectionFailure) {
           return Container(
@@ -751,5 +840,41 @@ class _ScratchclassState extends State<Scratchclass> {
             }),
           );
         });
+  }
+}
+
+class HeroDemoPage extends StatefulWidget {
+  final int index;
+  const HeroDemoPage({Key? key, required this.index}) : super(key: key);
+
+  @override
+  State<HeroDemoPage> createState() => _HeroDemoPageState();
+}
+
+class _HeroDemoPageState extends State<HeroDemoPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Hero(
+          tag: 'imageHero' + widget.index.toString(),
+          child: Center(child: Image.asset("assets/kalyan.jpg"))),
+      // your child ,
+    );
+  }
+}
+
+class CustomRectTween extends RectTween {
+  CustomRectTween({required Rect? begin, required Rect? end})
+      : super(begin: begin, end: end);
+
+  @override
+  Rect lerp(double t) {
+    double height = end!.top - begin!.top;
+    double width = end!.left - begin!.left;
+
+    double animatedX = begin!.left + (t * width);
+    double animatedY = begin!.top + (t * height);
+
+    return Rect.fromLTWH(animatedX, animatedY, 1, 1);
   }
 }

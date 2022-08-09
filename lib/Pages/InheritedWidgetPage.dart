@@ -2,14 +2,13 @@ import 'dart:async';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/Websockets.dart';
 
 class InheritedNetworkHandler extends InheritedWidget {
   final bool isNetworkAvailable;
 
   const InheritedNetworkHandler(
-      {required this.isNetworkAvailable, required Widget child})
-      : super(child: child);
+      {Key? key, required this.isNetworkAvailable, required Widget child})
+      : super(key: key, child: child);
 
   @override
   bool updateShouldNotify(covariant InheritedNetworkHandler oldWidget) {
@@ -77,7 +76,7 @@ class _NetworkHandlerState extends State<NetworkHandler> {
   @override
   Widget build(BuildContext context) {
     return InheritedNetworkHandler(
-        isNetworkAvailable: isNetworkAvailable, child: const ChildWidget123());
+        isNetworkAvailable: isNetworkAvailable, child: const ChildWidget());
   }
 }
 

@@ -6,11 +6,11 @@ class ChildWidget123 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String? isNetworkAvailable = MyInheritedWidget.of(context).message;
+    final String? isNetworkAvailable = MyInheritedWidget?.of(context).message;
 
     return Scaffold(
       body: Container(
-        color: isNetworkAvailable == true ? Colors.white : Colors.blue,
+        color: isNetworkAvailable != null ? Colors.white : Colors.blue,
       ),
     );
   }

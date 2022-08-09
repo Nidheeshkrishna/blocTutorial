@@ -17,3 +17,7 @@ class RewardEvent extends AppdrawerEvent {}
 class InheritedWidgetEvent extends AppdrawerEvent {}
 
 class CounterPageEvent extends AppdrawerEvent {}
+
+class FreezedEvent extends AppdrawerEvent {}
+
+class CalenderEvent extends AppdrawerEvent {}

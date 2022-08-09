@@ -15,3 +15,7 @@ class RewardState extends AppdrawerState {}
 class InheritedWidgetState extends AppdrawerState {}
 
 class CounterPageState extends AppdrawerState {}
+
+class FreezedState extends AppdrawerState {}
+
+class CalenderState extends AppdrawerState {}

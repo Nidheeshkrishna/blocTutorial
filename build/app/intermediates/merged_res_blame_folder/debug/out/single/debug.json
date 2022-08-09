@@ -1,7 +1,55 @@
 [
     {
-        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-v21_background.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-v21/background.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xxhdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xxhdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-v21_background.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-v21/background.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-hdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-hdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-mdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-mdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xxhdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xxhdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xhdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xxhdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xxhdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xhdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xhdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-v21_launch_background.xml.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-v21/launch_background.xml"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-hdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-hdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-mdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-mdpi/branding.png"
     },
     {
         "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -12,15 +60,99 @@
         "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-mdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-mdpi/splash.png"
     },
     {
         "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xhdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xhdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-mdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-mdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xhdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-hdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-hdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xhdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xhdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xxhdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xxhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-hdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-hdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xxxhdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xxxhdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xxhdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xxhdpi/branding.png"
+    },
+    {
         "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-v21_launch_background.xml.flat",
         "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-v21/launch_background.xml"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xxxhdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xxxhdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xxxhdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xxxhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xxxhdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xxxhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-hdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-hdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-mdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-mdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-xxxhdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-xxxhdpi/android12splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xxhdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xxhdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xxxhdpi_branding.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xxxhdpi/branding.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-hdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-hdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-night-mdpi_splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-night-mdpi/splash.png"
+    },
+    {
+        "merged": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/res/merged/debug/drawable-xhdpi_android12splash.png.flat",
+        "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/drawable-xhdpi/android12splash.png"
     }
 ]
