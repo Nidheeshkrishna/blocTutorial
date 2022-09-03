@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/MyBlocObserver.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
@@ -21,6 +20,7 @@ import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart' as pathProvider;
 import 'package:responsive_framework/responsive_framework.dart';
 
+import 'Pages/AnimationDemo/CustomAnimation.dart';
 import 'bloc/AppDrawerBloc/appdrawer_bloc.dart';
 
 Future<void> main() async {
@@ -56,26 +56,6 @@ class _MyAppState extends State<MyApp> {
   GetIt locator = GetIt.instance;
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
   late NavigationService navigationService;
-  @override
-  void initState() {
-    super.initState();
-    initialization();
-  }
-
-  void initialization() async {
-    // This is where you can initialize the resources needed by your app while
-    // the splash screen is displayed.  Remove the following example because
-    // delaying the user experience is a bad design practice!
-    // ignore_for_file: avoid_print
-
-    await Future.delayed(const Duration(seconds: 1));
-    print('go!');
-
-    FlutterNativeSplash.remove();
-
-    //var isUserLoggedIn = await User.IsUserLoggedIn();
-  }
-
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -119,10 +99,30 @@ class _MyAppState extends State<MyApp> {
               theme: AppTheme().getAppThemeLight(),
               // CompleteDetailes()
 
-              home: const HomePage(),
+              home: const WelcomeScreen(),
               navigatorKey: NavigationService.navigatorKey);
         });
       }),
     );
+  }
+
+  void initialization() async {
+    // This is where you can initialize the resources needed by your app while
+    // the splash screen is displayed.  Remove the following example because
+    // delaying the user experience is a bad design practice!
+    // ignore_for_file: avoid_print
+
+    await Future.delayed(const Duration(seconds: 1));
+    print('go!');
+
+    FlutterNativeSplash.remove();
+
+    //var isUserLoggedIn = await User.IsUserLoggedIn();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initialization();
   }
 }

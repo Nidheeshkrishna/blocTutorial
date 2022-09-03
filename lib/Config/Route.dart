@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/AlbumHomePage.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/AnimationDemo/borderAnimation.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamNavigatiionPage/BottamnavigationPages.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/ContextLessNavigation/ContextLessNavigationPage.dart';
@@ -44,6 +45,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const FormScreen());
       case '/AppDrawer':
         return MaterialPageRoute(builder: (_) => const AppDrawer());
+      case '/BorderAnimation':
+        return MaterialPageRoute(builder: (_) => const BorderAnimation());
 
       default:
         return MaterialPageRoute(

@@ -14,6 +14,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "animated_text_kit",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-4.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.0",
       "packageUri": "lib/",
@@ -146,6 +152,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "color",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/color-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "confetti",
       "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/confetti-0.6.0",
       "packageUri": "lib/",
@@ -224,6 +236,12 @@
       "languageVersion": "2.13"
     },
     {
+      "name": "dartx",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/dartx-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "data_connection_checker_tv",
       "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/data_connection_checker_tv-0.3.5-nullsafety",
       "packageUri": "lib/",
@@ -260,8 +278,26 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dotted_border",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/dotted_border-2.0.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "dynamic_widget",
-      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/dynamic_widget-4.0.5",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/dynamic_widget-4.0.0-nullsafety.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "easy_localization",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/easy_localization-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "easy_logger",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/easy_logger-0.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -306,6 +342,18 @@
       "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-8.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_gen_core",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_gen_core-4.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "flutter_gen_runner",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_gen_runner-4.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "flutter_lints",
@@ -375,7 +423,7 @@
     },
     {
       "name": "font_awesome_flutter",
-      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.2.0",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.0.0-nullsafety",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -920,6 +968,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "time",
+      "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/time-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "timing",
       "rootUri": "file:///Users/ociuz/flutter/flutter/.pub-cache/hosted/pub.dartlang.org/timing-1.0.0",
       "packageUri": "lib/",
@@ -1034,7 +1088,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-08-05T04:55:10.470050Z",
+  "generated": "2022-09-03T11:19:02.447052Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
