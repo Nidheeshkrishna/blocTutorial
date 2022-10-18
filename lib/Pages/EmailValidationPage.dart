@@ -18,19 +18,6 @@ class _FormScreenState extends State<FormScreen> {
   final _emailController = TextEditingController();
 
   @override
-  void initState() {
-    _bloc = EmailValidationBloc();
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _emailController.dispose();
-    _bloc.close();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     final bool? isNetworkAvailable =
         InheritedNetworkHandler.of(context)?.isNetworkAvailable;
@@ -110,12 +97,12 @@ class _FormScreenState extends State<FormScreen> {
                             ),
                           ],
                           const SizedBox(height: 30),
-                          RaisedButton(
-                            child: const Text('Submit'),
-                            onPressed: () => _bloc.add(
-                                EmailValidationEvent.FormScreenEventSubmit(
-                                    _emailController.text)),
-                          ),
+                          // RaisedButton(
+                          //   child: const Text('Submit'),
+                          //   onPressed: () => _bloc.add(
+                          //       EmailValidationEvent.FormScreenEventSubmit(
+                          //           _emailController.text)),
+                          // ),
                         ]);
                   });
                 }),
@@ -125,16 +112,18 @@ class _FormScreenState extends State<FormScreen> {
     );
   }
 
-  UnderlineInputBorder _renderBorder(FieldError? emailError) =>
-      UnderlineInputBorder(
-        borderSide: BorderSide(
-            color: _hasEmailError(emailError = FieldError.Empty)
-                ? Colors.red
-                : Colors.black,
-            width: 1),
-      );
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _bloc.close();
+    super.dispose();
+  }
 
-  bool _hasEmailError(FieldError? emailError) => emailError != null;
+  @override
+  void initState() {
+    _bloc = EmailValidationBloc();
+    super.initState();
+  }
 
   String _emailErrorText(FieldError? error) {
     switch (error) {
@@ -146,4 +135,15 @@ class _FormScreenState extends State<FormScreen> {
         return '';
     }
   }
+
+  bool _hasEmailError(FieldError? emailError) => emailError != null;
+
+  UnderlineInputBorder _renderBorder(FieldError? emailError) =>
+      UnderlineInputBorder(
+        borderSide: BorderSide(
+            color: _hasEmailError(emailError = FieldError.Empty)
+                ? Colors.red
+                : Colors.black,
+            width: 1),
+      );
 }

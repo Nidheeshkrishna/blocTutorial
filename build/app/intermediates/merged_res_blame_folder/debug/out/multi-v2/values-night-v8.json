@@ -4,6 +4,23 @@
             "outputFile": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
+                    "source": "/Users/ociuz/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "639,709,793,877,973,1075,1177,1271",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "704,788,872,968,1070,1172,1266,1355"
+                    }
+                },
+                {
                     "source": "/Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,16",

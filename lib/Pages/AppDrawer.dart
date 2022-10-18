@@ -20,7 +20,7 @@ class AppDrawer extends StatelessWidget {
             } else if (state is ContextlessState) {
               Navigator.pushNamed(context, "/contextless");
             } else if (state is RewardState) {
-              Navigator.pushNamed(context, "/reward");
+              Navigator.pushNamed(context, "/imaewithwatermark");
             } else if (state is InheritedWidgetState) {
               Navigator.pushNamed(context, "/Inheritedwidget");
             } else if (state is CounterPageState) {

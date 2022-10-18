@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:dynamic_widget/dynamic_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
@@ -19,6 +18,69 @@ import 'package:getwidget/getwidget.dart';
 import 'package:lottie/lottie.dart';
 import 'package:scratcher/scratcher.dart';
 
+var iconJson = {
+  "type": "Row",
+  "mainAxisAlignment": "spaceAround",
+  "children": [
+    {"type": "Icon", "data": "fa.google", "color": "#000000", "size": 36.0},
+    {
+      "type": "Icon",
+      "data": "favorite",
+      "color": "#FFC0CB",
+      "size": 24.0,
+      "semanticLabel": "Text to announce in accessibility modes"
+    },
+    {"type": "Icon", "data": "audiotrack", "color": "#008000", "size": 30.0},
+    {"type": "Icon", "data": "beach_access", "color": "#0000FF", "size": 36.0}
+  ]
+};
+
+class CircularTween extends RectTween {
+  @override
+  final Rect? begin;
+  @override
+  final Rect? end;
+
+  CircularTween({
+    required this.begin,
+    required this.end,
+  });
+
+  @override
+  Rect lerp(double t) {
+    double startWidthCenter = begin!.left + (begin!.width / 2);
+    double startHeightCenter = begin!.top + (begin!.height / 2);
+    return Rect.fromCircle(
+      center: Offset(startWidthCenter, startHeightCenter),
+      radius: 100,
+    );
+  }
+}
+
+class CustomRectTween extends RectTween {
+  CustomRectTween({required Rect? begin, required Rect? end})
+      : super(begin: begin, end: end);
+
+  @override
+  Rect lerp(double t) {
+    double height = end!.top - begin!.top;
+    double width = end!.left - begin!.left;
+
+    double animatedX = begin!.left + (t * width);
+    double animatedY = begin!.top + (t * height);
+
+    return Rect.fromLTWH(animatedX, animatedY, 1, 1);
+  }
+}
+
+class HeroDemoPage extends StatefulWidget {
+  final int index;
+  const HeroDemoPage({Key? key, required this.index}) : super(key: key);
+
+  @override
+  State<HeroDemoPage> createState() => _HeroDemoPageState();
+}
+
 class Page1 extends StatefulWidget {
   const Page1({Key? key}) : super(key: key);
 
@@ -26,29 +88,115 @@ class Page1 extends StatefulWidget {
   State<Page1> createState() => _Page1State();
 }
 
-class _Page1State extends State<Page1> {
+class Page2 extends StatelessWidget {
+  const Page2({Key? key}) : super(key: key);
+
   @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    //initialization();
+  Widget build(BuildContext context) {
+    return BlocConsumer<NetworkBloc, NetworkState>(
+      listener: (context, state) {
+        if (state is ConnectionSuccess) {
+        } else if (state is ConnectionFailure) {
+          HelperTools().snackBarWidget(
+              context,
+              "No NetWork",
+              Icons.cloud_off_outlined,
+              const Color.fromARGB(255, 150, 100, 26),
+              1);
+        }
+      },
+      builder: (context, state) {
+        if (state is ConnectionSuccess) {
+          return Container(
+            color: const Color(0xffC4DFCB),
+            child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * .60,
+                child: Hero(
+                    tag: 'imageHero',
+                    child: SvgPicture.asset("assets/svgold.svg"))),
+          );
+        } else if (state is ConnectionFailure) {
+          return Container(
+            color: const Color(0xffC4DFCB),
+            child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * .60,
+                child: const Icon(Icons.cloud_off_outlined)),
+          );
+        } else {
+          return Container();
+        }
+      },
+    );
   }
+}
 
-  void initialization() async {
-    // This is where you can initialize the resources needed by your app while
-    // the splash screen is displayed.  Remove the following example because
-    // delaying the user experience is a bad design practice!
-    // ignore_for_file: avoid_print
-    print('ready in 3...');
-    await Future.delayed(const Duration(seconds: 1));
-    print('ready in 2...');
-    await Future.delayed(const Duration(seconds: 1));
-    print('ready in 1...');
-    await Future.delayed(const Duration(seconds: 1));
-    print('go!');
-    FlutterNativeSplash.remove();
+class Page3 extends StatelessWidget {
+  const Page3({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: const Color(0xffC4DFCB),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Lottie.network(
+              'https://assets1.lottiefiles.com/private_files/lf30_QLsD8M.json',
+              height: 200.0,
+              repeat: true,
+              reverse: true,
+              animate: true,
+            ),
+            Lottie.network(
+              'https://assets1.lottiefiles.com/private_files/lf30_yQtj4O.json',
+              repeat: true,
+              reverse: true,
+              animate: true,
+            ),
+          ],
+        ),
+      ),
+    );
   }
+}
 
+class Page4 extends StatefulWidget {
+  const Page4({Key? key}) : super(key: key);
+
+  @override
+  State<Page4> createState() => _Page4State();
+}
+
+class Page5 extends StatefulWidget {
+  const Page5({Key? key}) : super(key: key);
+
+  @override
+  State<Page5> createState() => _Page5State();
+}
+
+class Scratchclass extends StatefulWidget {
+  const Scratchclass({Key? key}) : super(key: key);
+
+  @override
+  State<Scratchclass> createState() => _ScratchclassState();
+}
+
+class _HeroDemoPageState extends State<HeroDemoPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Hero(
+          tag: 'imageHero' + widget.index.toString(),
+          child: Center(child: Image.asset("assets/kalyan.jpg"))),
+      // your child ,
+    );
+  }
+}
+
+class _Page1State extends State<Page1> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -209,135 +357,31 @@ class _Page1State extends State<Page1> {
     );
   }
 
+  void initialization() async {
+    // This is where you can initialize the resources needed by your app while
+    // the splash screen is displayed.  Remove the following example because
+    // delaying the user experience is a bad design practice!
+    // ignore_for_file: avoid_print
+    print('ready in 3...');
+    await Future.delayed(const Duration(seconds: 1));
+    print('ready in 2...');
+    await Future.delayed(const Duration(seconds: 1));
+    print('ready in 1...');
+    await Future.delayed(const Duration(seconds: 1));
+    print('go!');
+    FlutterNativeSplash.remove();
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    //initialization();
+  }
+
   static RectTween _createRectTween(Rect? begin, Rect? end) {
     return CustomRectTween(begin: begin, end: end);
   }
-}
-
-var iconJson = {
-  "type": "Row",
-  "mainAxisAlignment": "spaceAround",
-  "children": [
-    {"type": "Icon", "data": "fa.google", "color": "#000000", "size": 36.0},
-    {
-      "type": "Icon",
-      "data": "favorite",
-      "color": "#FFC0CB",
-      "size": 24.0,
-      "semanticLabel": "Text to announce in accessibility modes"
-    },
-    {"type": "Icon", "data": "audiotrack", "color": "#008000", "size": 30.0},
-    {"type": "Icon", "data": "beach_access", "color": "#0000FF", "size": 36.0}
-  ]
-};
-
-Future<Widget?> _buildWidget(BuildContext context) async {
-  return DynamicWidgetBuilder.build(
-      iconJson.toString(), context, DefaultClickListener());
-}
-
-class CircularTween extends RectTween {
-  @override
-  final Rect? begin;
-  @override
-  final Rect? end;
-
-  CircularTween({
-    required this.begin,
-    required this.end,
-  });
-
-  @override
-  Rect lerp(double t) {
-    double startWidthCenter = begin!.left + (begin!.width / 2);
-    double startHeightCenter = begin!.top + (begin!.height / 2);
-    return Rect.fromCircle(
-      center: Offset(startWidthCenter, startHeightCenter),
-      radius: 100,
-    );
-  }
-}
-
-class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return BlocConsumer<NetworkBloc, NetworkState>(
-      listener: (context, state) {
-        if (state is ConnectionSuccess) {
-        } else if (state is ConnectionFailure) {
-          HelperTools().snackBarWidget(
-              context,
-              "No NetWork",
-              Icons.cloud_off_outlined,
-              const Color.fromARGB(255, 150, 100, 26),
-              1);
-        }
-      },
-      builder: (context, state) {
-        if (state is ConnectionSuccess) {
-          return Container(
-            color: const Color(0xffC4DFCB),
-            child: SizedBox(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * .60,
-                child: Hero(
-                    tag: 'imageHero',
-                    child: SvgPicture.asset("assets/svgold.svg"))),
-          );
-        } else if (state is ConnectionFailure) {
-          return Container(
-            color: const Color(0xffC4DFCB),
-            child: SizedBox(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * .60,
-                child: const Icon(Icons.cloud_off_outlined)),
-          );
-        } else {
-          return Container();
-        }
-      },
-    );
-  }
-}
-
-class Page3 extends StatelessWidget {
-  const Page3({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xffC4DFCB),
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Lottie.network(
-              'https://assets1.lottiefiles.com/private_files/lf30_QLsD8M.json',
-              height: 200.0,
-              repeat: true,
-              reverse: true,
-              animate: true,
-            ),
-            Lottie.network(
-              'https://assets1.lottiefiles.com/private_files/lf30_yQtj4O.json',
-              repeat: true,
-              reverse: true,
-              animate: true,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class Page4 extends StatefulWidget {
-  const Page4({Key? key}) : super(key: key);
-
-  @override
-  State<Page4> createState() => _Page4State();
 }
 
 class _Page4State extends State<Page4> with TickerProviderStateMixin {
@@ -348,28 +392,6 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
   late AnimationController slidingBoxAnimationController;
 
   late Animation<double> slidingAnimation;
-
-  @override
-  void initState() {
-    super.initState();
-    // var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
-    // var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
-    // if (kDebugMode) {
-    //   print(john == john2);
-    // }
-
-    slidingBoxAnimationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    slidingAnimation = Tween(begin: -1.0, end: 0.0).animate(CurvedAnimation(
-        parent: slidingBoxAnimationController,
-        curve: Curves.fastLinearToSlowEaseIn));
-    slidingBoxAnimationController.forward();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -409,42 +431,32 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
       ),
     );
   }
-}
-
-class Page5 extends StatefulWidget {
-  const Page5({Key? key}) : super(key: key);
-
-  @override
-  State<Page5> createState() => _Page5State();
-}
-
-class _Page5State extends State<Page5> with TickerProviderStateMixin {
-  late final Animation<double> _animation;
-  @override
-  void initState() {
-    super.initState();
-    // // var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
-    // // var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
-    // if (kDebugMode) {
-    //   print(john == john2);
-    // }
-
-    late final AnimationController _controller = AnimationController(
-      // duration: const Duration(seconds: 0),
-      animationBehavior: AnimationBehavior.normal,
-      vsync: this,
-    );
-    _animation = CurvedAnimation(
-      parent: _controller,
-      curve: Curves.fastOutSlowIn,
-    );
-  }
 
   @override
   void dispose() {
     super.dispose();
   }
 
+  @override
+  void initState() {
+    super.initState();
+    // var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // if (kDebugMode) {
+    //   print(john == john2);
+    // }
+
+    slidingBoxAnimationController =
+        AnimationController(vsync: this, duration: const Duration(seconds: 2));
+    slidingAnimation = Tween(begin: -1.0, end: 0.0).animate(CurvedAnimation(
+        parent: slidingBoxAnimationController,
+        curve: Curves.fastLinearToSlowEaseIn));
+    slidingBoxAnimationController.forward();
+  }
+}
+
+class _Page5State extends State<Page5> with TickerProviderStateMixin {
+  late final Animation<double> _animation;
   @override
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
@@ -479,20 +491,31 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
       ),
     );
   }
-}
 
-class DefaultClickListener implements ClickListener {
   @override
-  Future<void> onClicked(String? event) async {
-    //print("Receive click event: " + event!);
+  void dispose() {
+    super.dispose();
   }
-}
-
-class Scratchclass extends StatefulWidget {
-  const Scratchclass({Key? key}) : super(key: key);
 
   @override
-  State<Scratchclass> createState() => _ScratchclassState();
+  void initState() {
+    super.initState();
+    // // var john = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // // var john2 = const Person(firstName: 'John', lastName: 'Smith', age: 42);
+    // if (kDebugMode) {
+    //   print(john == john2);
+    // }
+
+    late final AnimationController _controller = AnimationController(
+      // duration: const Duration(seconds: 0),
+      animationBehavior: AnimationBehavior.normal,
+      vsync: this,
+    );
+    _animation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.fastOutSlowIn,
+    );
+  }
 }
 
 class _ScratchclassState extends State<Scratchclass> {
@@ -502,30 +525,14 @@ class _ScratchclassState extends State<Scratchclass> {
 
   var activeIndex;
 
-  // late final TextEditingController _passwordController =
-  //     TextEditingController();
-
-  // late final FocusNode _passwordControllerFocus = FocusNode();
-
-  Widget _buildPassword() {
-    return TextFormFieldWidget(
-      hintText: "Password",
-      obscureText: false,
-      textInputType: TextInputType.visiblePassword,
-      actionKeyboard: TextInputAction.done,
-      functionValidate: commonValidation,
-      // controller: _passwordController,
-      // focusNode: _passwordControllerFocus,
-      onSubmitField: () {},
-      parametersValidate: "Please enter password.",
-      prefixIcon: const Icon(Icons.keyboard_hide),
-    );
-  }
-
-  @override
-  void initState() {
-    super.initState();
-  }
+  final List<String> imageList = [
+    "https://cdn.pixabay.com/photo/2017/12/03/18/04/christmas-balls-2995437_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/12/13/00/23/christmas-3015776_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/19/10/55/christmas-market-4705877_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/20/00/03/road-4707345_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/22/04/18/x-mas-4711785__340.jpg",
+    "https://cdn.pixabay.com/photo/2016/11/22/07/09/spruce-1848543__340.jpg"
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -685,14 +692,6 @@ class _ScratchclassState extends State<Scratchclass> {
     );
   }
 
-  final List<String> imageList = [
-    "https://cdn.pixabay.com/photo/2017/12/03/18/04/christmas-balls-2995437_960_720.jpg",
-    "https://cdn.pixabay.com/photo/2017/12/13/00/23/christmas-3015776_960_720.jpg",
-    "https://cdn.pixabay.com/photo/2019/12/19/10/55/christmas-market-4705877_960_720.jpg",
-    "https://cdn.pixabay.com/photo/2019/12/20/00/03/road-4707345_960_720.jpg",
-    "https://cdn.pixabay.com/photo/2019/12/22/04/18/x-mas-4711785__340.jpg",
-    "https://cdn.pixabay.com/photo/2016/11/22/07/09/spruce-1848543__340.jpg"
-  ];
   bool checkRestaurentStatus(String openTime, String closedTime) {
     //NOTE: Time should be as given format only
     //10:00PM
@@ -776,6 +775,11 @@ class _ScratchclassState extends State<Scratchclass> {
     return false;
   }
 
+  @override
+  void initState() {
+    super.initState();
+  }
+
   Future<void> scratchDialog(BuildContext context) {
     return showDialog(
         context: context,
@@ -841,40 +845,24 @@ class _ScratchclassState extends State<Scratchclass> {
           );
         });
   }
-}
 
-class HeroDemoPage extends StatefulWidget {
-  final int index;
-  const HeroDemoPage({Key? key, required this.index}) : super(key: key);
+  // late final TextEditingController _passwordController =
+  //     TextEditingController();
 
-  @override
-  State<HeroDemoPage> createState() => _HeroDemoPageState();
-}
+  // late final FocusNode _passwordControllerFocus = FocusNode();
 
-class _HeroDemoPageState extends State<HeroDemoPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Hero(
-          tag: 'imageHero' + widget.index.toString(),
-          child: Center(child: Image.asset("assets/kalyan.jpg"))),
-      // your child ,
+  Widget _buildPassword() {
+    return TextFormFieldWidget(
+      hintText: "Password",
+      obscureText: false,
+      textInputType: TextInputType.visiblePassword,
+      actionKeyboard: TextInputAction.done,
+      functionValidate: commonValidation,
+      // controller: _passwordController,
+      // focusNode: _passwordControllerFocus,
+      onSubmitField: () {},
+      parametersValidate: "Please enter password.",
+      prefixIcon: const Icon(Icons.keyboard_hide),
     );
-  }
-}
-
-class CustomRectTween extends RectTween {
-  CustomRectTween({required Rect? begin, required Rect? end})
-      : super(begin: begin, end: end);
-
-  @override
-  Rect lerp(double t) {
-    double height = end!.top - begin!.top;
-    double width = end!.left - begin!.left;
-
-    double animatedX = begin!.left + (t * width);
-    double animatedY = begin!.top + (t * height);
-
-    return Rect.fromLTWH(animatedX, animatedY, 1, 1);
   }
 }

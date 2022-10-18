@@ -1,12 +1,10 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:6:4-39:19
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:9:4-42:19
 MERGED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
 MERGED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:30:5-143:19
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:30:5-143:19
+MERGED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cb96bb2c73a9a359ac6db36b67e75b6a/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cb96bb2c73a9a359ac6db36b67e75b6a/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
@@ -17,8 +15,12 @@ MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ociuz/.gr
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ff9b89b4ac017790c61bce9c0773f572/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:30:5-143:19
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:30:5-143:19
+MERGED from [androidx.core:core:1.8.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1a700d90560db5b83be244a9e0368578/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1a700d90560db5b83be244a9e0368578/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
@@ -26,54 +28,62 @@ MERGED from [androidx.room:room-runtime:2.2.5] /Users/ociuz/.gradle/caches/trans
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.8.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:name
 		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
-INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
-INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
-INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
-MERGED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
-MERGED from [:shared_preferences_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_webrtc] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_webrtc/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_statusbarcolor_ns] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_statusbarcolor_ns/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
+INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
+MERGED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
 MERGED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:geocoding] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geocoding/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:local_auth_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/local_auth_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:better_player] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_native_splash] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:wakelock] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [:shared_preferences_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_webrtc] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_webrtc/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_statusbarcolor_ns] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_statusbarcolor_ns/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:motion_sensors] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/motion_sensors/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:geocoding] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geocoding/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/77afdf262bed7c1210a02882645b5ae2/jetified-lifecycle-runtime-ktx-2.4.0-beta01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
-MERGED from [com.github.webrtc-sdk:android:97.4692.01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b00842358609379b09c329ab0fa3d10f/jetified-android-97.4692.01/AndroidManifest.xml:11:1-14:12
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3bda5006f0da088db4cd11e056b1c724/jetified-exoplayer-hls-2.17.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b60f216a039b8fd2fc8d79caee003689/jetified-exoplayer-dash-2.17.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/0c0cdee2846edd3719e48cdb23be2272/jetified-exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/260d21a76c021e368c01ef592d91e572/jetified-exoplayer-ui-2.17.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cb96bb2c73a9a359ac6db36b67e75b6a/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/2e4a85810cbfbcf1377eeb56b9a23e36/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ff9b89b4ac017790c61bce9c0773f572/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.5.2] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/7f235d08ae78a17607bd3e39ec82eeb1/fragment-1.5.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c85680b77ae26fc285ddc7522a11152e/jetified-activity-1.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8a18f96b3802b3c46f94ce181f95f6e3/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1347e8ec1a82d01dcd8b1786664cd739/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3bda5006f0da088db4cd11e056b1c724/jetified-exoplayer-hls-2.17.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b60f216a039b8fd2fc8d79caee003689/jetified-exoplayer-dash-2.17.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/0c0cdee2846edd3719e48cdb23be2272/jetified-exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9cf26deb0660b911a2f51e0068e213ee/jetified-exoplayer-ui-2.17.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:17:1-145:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fb09b6193c757f89cb0362e9d3663dce/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:extension-mediasession:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5d2a1e6a9f77800b22f46f964d17fb89/jetified-extension-mediasession-2.17.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.media:media:1.4.3] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/570b08bd1076f6c263d4018800c9909d/media-1.4.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1c405fe5273f1de4637e85879cbbfb8a/jetified-core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/927e02a815d4d92c90cc85ee5b1311b2/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/7975ac3d088d023a915efc519262fb32/lifecycle-runtime-2.4.0-beta01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c43f95590ad8d07b90158a2201706b0c/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/2d1706100f6b4d1d65d9197776051e34/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.8.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/6294b03a0121a0db938b4b46adeeab06/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1a700d90560db5b83be244a9e0368578/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f357c64724341904aa8dd1e6cfa122cd/jetified-exoplayer-datasource-2.17.1/AndroidManifest.xml:17:1-24:12
@@ -85,8 +95,15 @@ MERGED from [androidx.room:room-runtime:2.2.5] /Users/ociuz/.gradle/caches/trans
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fef37646fd19b6d9d69a8b62bf688400/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a9c1e7dac34bcee99aa5a66930665286/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fdae5211189a2e7f88bcaf74e1e4ea74/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c43f95590ad8d07b90158a2201706b0c/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/87881b92744f9d141ae876f989518f79/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/927e02a815d4d92c90cc85ee5b1311b2/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/41b22dd8d8dde3e75988a2b2f33a162b/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.webrtc-sdk:android:97.4692.01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b00842358609379b09c329ab0fa3d10f/jetified-android-97.4692.01/AndroidManifest.xml:11:1-14:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -97,11 +114,11 @@ INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debu
 		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
 		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-40:12
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:1-43:12
 		INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -113,20 +130,32 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:5:1-77
 	android:name
 		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:5:18-74
+uses-permission#android.permission.USE_BIOMETRIC
+ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:6:6-72
+MERGED from [:local_auth_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/local_auth_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-72
+MERGED from [:local_auth_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/local_auth_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-72
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:24:5-72
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:24:5-72
+	android:name
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:6:23-70
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:7:7-75
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:27:5-74
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:27:5-74
+	android:name
+		ADDED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml:7:24-73
 uses-sdk
 INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/main/AndroidManifest.xml
-MERGED from [:shared_preferences_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_webrtc] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_webrtc/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_webrtc] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_webrtc/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_statusbarcolor_ns] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_statusbarcolor_ns/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_statusbarcolor_ns] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_statusbarcolor_ns/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:geocoding] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geocoding/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:geocoding] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geocoding/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:local_auth_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/local_auth_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:local_auth_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/local_auth_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:better_player] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/better_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -137,26 +166,20 @@ MERGED from [:flutter_native_splash] /Users/ociuz/PROJECTS/demo/blocTutorialLate
 MERGED from [:flutter_native_splash] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/wakelock/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [:shared_preferences_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_webrtc] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_webrtc/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_webrtc] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_webrtc/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_statusbarcolor_ns] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_statusbarcolor_ns/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_statusbarcolor_ns] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/flutter_statusbarcolor_ns/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:motion_sensors] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/motion_sensors/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:motion_sensors] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/motion_sensors/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geocoding] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geocoding/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geocoding] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geocoding/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/77afdf262bed7c1210a02882645b5ae2/jetified-lifecycle-runtime-ktx-2.4.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/77afdf262bed7c1210a02882645b5ae2/jetified-lifecycle-runtime-ktx-2.4.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.webrtc-sdk:android:97.4692.01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b00842358609379b09c329ab0fa3d10f/jetified-android-97.4692.01/AndroidManifest.xml:13:3-72
-MERGED from [com.github.webrtc-sdk:android:97.4692.01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b00842358609379b09c329ab0fa3d10f/jetified-android-97.4692.01/AndroidManifest.xml:13:3-72
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3bda5006f0da088db4cd11e056b1c724/jetified-exoplayer-hls-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3bda5006f0da088db4cd11e056b1c724/jetified-exoplayer-hls-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b60f216a039b8fd2fc8d79caee003689/jetified-exoplayer-dash-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b60f216a039b8fd2fc8d79caee003689/jetified-exoplayer-dash-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/0c0cdee2846edd3719e48cdb23be2272/jetified-exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/0c0cdee2846edd3719e48cdb23be2272/jetified-exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/260d21a76c021e368c01ef592d91e572/jetified-exoplayer-ui-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-ui:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/260d21a76c021e368c01ef592d91e572/jetified-exoplayer-ui-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.biometric:biometric:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cbb3d625d33b72056d970fab9ec3f1b4/biometric-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cb96bb2c73a9a359ac6db36b67e75b6a/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/cb96bb2c73a9a359ac6db36b67e75b6a/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
@@ -167,34 +190,58 @@ MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ociuz/.gr
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ff9b89b4ac017790c61bce9c0773f572/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8601dd65e0c6893d5abc5ccde1e2cab3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/062c584e7105f32bea72d749c12db8a1/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.2] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/7f235d08ae78a17607bd3e39ec82eeb1/fragment-1.5.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.2] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/7f235d08ae78a17607bd3e39ec82eeb1/fragment-1.5.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c85680b77ae26fc285ddc7522a11152e/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c85680b77ae26fc285ddc7522a11152e/jetified-activity-1.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8a18f96b3802b3c46f94ce181f95f6e3/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8a18f96b3802b3c46f94ce181f95f6e3/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1347e8ec1a82d01dcd8b1786664cd739/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1347e8ec1a82d01dcd8b1786664cd739/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ad201fac15a88598107ec645f351f5b4/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3bda5006f0da088db4cd11e056b1c724/jetified-exoplayer-hls-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3bda5006f0da088db4cd11e056b1c724/jetified-exoplayer-hls-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b60f216a039b8fd2fc8d79caee003689/jetified-exoplayer-dash-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b60f216a039b8fd2fc8d79caee003689/jetified-exoplayer-dash-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/0c0cdee2846edd3719e48cdb23be2272/jetified-exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/0c0cdee2846edd3719e48cdb23be2272/jetified-exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9cf26deb0660b911a2f51e0068e213ee/jetified-exoplayer-ui-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9cf26deb0660b911a2f51e0068e213ee/jetified-exoplayer-ui-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fb09b6193c757f89cb0362e9d3663dce/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fb09b6193c757f89cb0362e9d3663dce/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:extension-mediasession:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5d2a1e6a9f77800b22f46f964d17fb89/jetified-extension-mediasession-2.17.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:extension-mediasession:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5d2a1e6a9f77800b22f46f964d17fb89/jetified-extension-mediasession-2.17.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.4.3] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/570b08bd1076f6c263d4018800c9909d/media-1.4.3/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.media:media:1.4.3] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/570b08bd1076f6c263d4018800c9909d/media-1.4.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1c405fe5273f1de4637e85879cbbfb8a/jetified-core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1c405fe5273f1de4637e85879cbbfb8a/jetified-core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/ae39e38aa58f5c391f29a4bfad4a41a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/92d1f830d8a4f76d15ea1f849fb6f29f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/172ae1f46f014e6681a2cc350fa8b737/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/09c1773ed3597f8bec6064dc26d157be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9ccab238727e236e8aff01a0f95cebe4/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/927e02a815d4d92c90cc85ee5b1311b2/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/927e02a815d4d92c90cc85ee5b1311b2/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/7975ac3d088d023a915efc519262fb32/lifecycle-runtime-2.4.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0-beta01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/7975ac3d088d023a915efc519262fb32/lifecycle-runtime-2.4.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c43f95590ad8d07b90158a2201706b0c/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c43f95590ad8d07b90158a2201706b0c/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/2d1706100f6b4d1d65d9197776051e34/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/2d1706100f6b4d1d65d9197776051e34/lifecycle-livedata-core-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8d7928c9f52af5f964a662866fcebb3e/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1463556a47b0b11e0e32553482070255/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/61fd575f974e3d768efc2f6a143e0eae/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/986216458f3c0df423ee68e7f1177976/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/6294b03a0121a0db938b4b46adeeab06/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/6294b03a0121a0db938b4b46adeeab06/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1a700d90560db5b83be244a9e0368578/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/1a700d90560db5b83be244a9e0368578/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/6c6575c923e75933616af1a602db32e0/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
@@ -217,10 +264,24 @@ MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/ociuz/.gradle/caches/transform
 MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a9c1e7dac34bcee99aa5a66930665286/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/884708a9396f81808c0ac10f4b98ea32/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fdae5211189a2e7f88bcaf74e1e4ea74/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fdae5211189a2e7f88bcaf74e1e4ea74/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c43f95590ad8d07b90158a2201706b0c/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/c43f95590ad8d07b90158a2201706b0c/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/87881b92744f9d141ae876f989518f79/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/87881b92744f9d141ae876f989518f79/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/927e02a815d4d92c90cc85ee5b1311b2/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/927e02a815d4d92c90cc85ee5b1311b2/jetified-lifecycle-service-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/41b22dd8d8dde3e75988a2b2f33a162b/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/41b22dd8d8dde3e75988a2b2f33a162b/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/16e110bf603f94cf61f970a18f3907e3/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9a0e475eb211916dfa0da9de1d6c02a3/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/69ba5a98805d81d755806668ff70d04f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/9ed314abc3df537a2d48c1cb6d65998e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.webrtc-sdk:android:97.4692.01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b00842358609379b09c329ab0fa3d10f/jetified-android-97.4692.01/AndroidManifest.xml:13:3-72
+MERGED from [com.github.webrtc-sdk:android:97.4692.01] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/b00842358609379b09c329ab0fa3d10f/jetified-android-97.4692.01/AndroidManifest.xml:13:3-72
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5bfc0955e244073bdc8cc139cda5e092/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 INJECTED from /Users/ociuz/PROJECTS/demo/blocTutorialLatest/android/app/src/debug/AndroidManifest.xml
@@ -251,6 +312,22 @@ ADDED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/b
 		ADDED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-53
 	android:name
 		ADDED from [:geolocator_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-77
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker_android] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/f81d7720190f110f0e5c11d71f550860/jetified-exoplayer-core-2.17.1/AndroidManifest.xml:24:5-79
@@ -261,6 +338,20 @@ MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.17.1] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a4b01154a71be27f51343e9e9dd58b68/jetified-exoplayer-common-2.17.1/AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from [:connectivity_plus] /Users/ociuz/PROJECTS/demo/blocTutorialLatest/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required
@@ -497,20 +588,6 @@ action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
 ADDED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
 	android:name
 		ADDED from [androidx.work:work-runtime:2.7.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/3679fa9be1d67d14c72169d3353f14d4/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.2.5] /Users/ociuz/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
 	android:exported
