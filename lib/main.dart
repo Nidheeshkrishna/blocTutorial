@@ -1,13 +1,13 @@
 import 'dart:io';
 
+import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/Heroanimation/Heroanimation.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/MyBlocObserver.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/isolateThread.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/CounterBloc/bloc/countre_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
@@ -26,6 +26,17 @@ import 'bloc/AppDrawerBloc/appdrawer_bloc.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  AwesomeNotifications().initialize(null, [
+    NotificationChannel(
+        channelGroupKey: 'Sync_Channel',
+        channelKey: 'Sync_Channel_key',
+        channelName: 'Sync Notification',
+        channelDescription: 'Notification channel for sync',
+        defaultColor: Colors.pink,
+        ledColor: Colors.red,
+        importance: NotificationImportance.High),
+  ]);
   // const String dataBoxName = "data";
   Directory directory = await pathProvider.getApplicationDocumentsDirectory();
   Hive.init(directory.path);
@@ -104,9 +115,12 @@ class _MyAppState extends State<MyApp> {
 //AuthPath()
               // HomePage
               //imagView_360
-             // HeroFirstScreen ()
+              // HeroFirstScreen ()
 //HomePage(),
-              home: const HomePage(),
+              //const AwesomeNotification(),
+              // AppWidget
+
+              home: const SimpleIsolate(),
               navigatorKey: NavigationService.navigatorKey);
         });
       }),
