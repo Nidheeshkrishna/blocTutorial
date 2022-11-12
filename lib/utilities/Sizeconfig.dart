@@ -18,6 +18,9 @@ class SizeConfig {
 
   static double blockSizeVertical = 0;
 
+
+  
+
   void init(BoxConstraints constraints, Orientation orientation) {
     if (orientation == Orientation.portrait) {
       _screenWidth = constraints.maxWidth;

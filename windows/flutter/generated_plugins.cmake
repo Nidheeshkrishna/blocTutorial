@@ -3,9 +3,11 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  awesome_notifications
   connectivity_plus_windows
   flutter_webrtc
   geolocator_windows
+  isar_flutter_libs
   local_auth_windows
 )
 

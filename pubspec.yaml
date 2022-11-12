@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 localization_dir: assets/languages
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -54,6 +54,9 @@ dependencies:
   socket_io_client: ^2.0.0
   getwidget: ^3.0.1
   carousel_slider: ^4.1.1
+  flutter_isolate: ^2.0.3
+  flutter_downloader: ^1.6.0
+
  
   dots_indicator: ^2.1.0
   geolocator: ^9.0.1
@@ -73,6 +76,7 @@ dependencies:
   page_transition: ^1.1.4
   flutter_native_splash: ^2.0.4
   easy_localization: ^3.0.0
+  awesome_notifications: ^0.7.3
   my_new_package:
          path: ./my_new_package
   font_awesome_flutter: 9.0.0-nullsafety
@@ -86,6 +90,9 @@ dependencies:
   formz: ^0.4.1
   dependencies:
   local_auth: ^2.1.2
+  isar: ^2.5.0
+  isar_flutter_libs: ^2.5.0
+  pana: ^0.21.19
 
 
 

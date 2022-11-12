@@ -5,12 +5,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/MyBlocObserver.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/isolateThread.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/CounterBloc/bloc/countre_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/NetWorkBloc/network_bloc_bloc.dart';
+import 'package:flutter_applicationgoogle_drive/bloc/bloc/FormvalidationBloc/bloc/my_form_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/bloc/album_freezed_bloc_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/NavigationService.dart';
 import 'package:flutter_applicationgoogle_drive/utilities/Sizeconfig.dart';
@@ -74,6 +75,7 @@ class _MyAppState extends State<MyApp> {
       providers: [
         BlocProvider(create: (_) => AlbumFreezedBlocBloc()),
         BlocProvider(create: (_) => CountreBlocBloc()),
+        BlocProvider(create: (_) => MyFormBloc()),
         BlocProvider<NetworkBloc>(
           create: (context) => NetworkBloc()..add(ListenConnection()),
         ),
@@ -120,7 +122,8 @@ class _MyAppState extends State<MyApp> {
               //const AwesomeNotification(),
               // AppWidget
 
-              home: const SimpleIsolate(),
+              //  home: const SimpleIsolate(),
+              home: const HomePage(),
               navigatorKey: NavigationService.navigatorKey);
         });
       }),

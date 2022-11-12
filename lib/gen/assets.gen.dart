@@ -50,6 +50,10 @@ class Assets {
   static const $AssetsLanguagesGen languages = $AssetsLanguagesGen();
   static const String loading = 'assets/loading.json';
   static const AssetGenImage logo = AssetGenImage('assets/logo.png');
+  static const AssetGenImage panorama = AssetGenImage('assets/panorama.jpg');
+  static const AssetGenImage panorama2 = AssetGenImage('assets/panorama2.webp');
+  static const AssetGenImage panoramaCropped =
+      AssetGenImage('assets/panorama_cropped.jpeg');
   static const AssetGenImage rupee = AssetGenImage('assets/rupee.jpeg');
   static const AssetGenImage scratchandwin =
       AssetGenImage('assets/scratchandwin.jpeg');

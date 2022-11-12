@@ -5,57 +5,14 @@
 
 part of 'email_validation_bloc.dart';
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 // **************************************************************************
 // FreezedGenerator
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-mixin _$EmailValidationEvent {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(String email) FormScreenEventSubmit,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String email)? FormScreenEventSubmit,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String email)? FormScreenEventSubmit,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_FormScreenEventSubmit value)
-        FormScreenEventSubmit,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
 
 /// @nodoc
 abstract class $EmailValidationEventCopyWith<$Res> {
@@ -65,118 +22,10 @@ abstract class $EmailValidationEventCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$EmailValidationEventCopyWithImpl<$Res>
-    implements $EmailValidationEventCopyWith<$Res> {
-  _$EmailValidationEventCopyWithImpl(this._value, this._then);
-
-  final EmailValidationEvent _value;
-  // ignore: unused_field
-  final $Res Function(EmailValidationEvent) _then;
-}
-
-/// @nodoc
-abstract class _$$_StartedCopyWith<$Res> {
-  factory _$$_StartedCopyWith(
-          _$_Started value, $Res Function(_$_Started) then) =
-      __$$_StartedCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$_StartedCopyWithImpl<$Res>
-    extends _$EmailValidationEventCopyWithImpl<$Res>
-    implements _$$_StartedCopyWith<$Res> {
-  __$$_StartedCopyWithImpl(_$_Started _value, $Res Function(_$_Started) _then)
-      : super(_value, (v) => _then(v as _$_Started));
-
-  @override
-  _$_Started get _value => super._value as _$_Started;
-}
-
-/// @nodoc
-
-class _$_Started implements _Started {
-  const _$_Started();
-
-  @override
-  String toString() {
-    return 'EmailValidationEvent.started()';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Started);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(String email) FormScreenEventSubmit,
-  }) {
-    return started();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String email)? FormScreenEventSubmit,
-  }) {
-    return started?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String email)? FormScreenEventSubmit,
-    required TResult orElse(),
-  }) {
-    if (started != null) {
-      return started();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_FormScreenEventSubmit value)
-        FormScreenEventSubmit,
-  }) {
-    return started(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
-  }) {
-    return started?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
-    required TResult orElse(),
-  }) {
-    if (started != null) {
-      return started(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _Started implements EmailValidationEvent {
-  const factory _Started() = _$_Started;
+abstract class $EmailValidationStateCopyWith<$Res> {
+  factory $EmailValidationStateCopyWith(EmailValidationState value,
+          $Res Function(EmailValidationState) then) =
+      _$EmailValidationStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -188,54 +37,34 @@ abstract class _$$_FormScreenEventSubmitCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_FormScreenEventSubmitCopyWithImpl<$Res>
-    extends _$EmailValidationEventCopyWithImpl<$Res>
-    implements _$$_FormScreenEventSubmitCopyWith<$Res> {
-  __$$_FormScreenEventSubmitCopyWithImpl(_$_FormScreenEventSubmit _value,
-      $Res Function(_$_FormScreenEventSubmit) _then)
-      : super(_value, (v) => _then(v as _$_FormScreenEventSubmit));
+abstract class _$$_FormScreenStateCopyWith<$Res> {
+  factory _$$_FormScreenStateCopyWith(
+          _$_FormScreenState value, $Res Function(_$_FormScreenState) then) =
+      __$$_FormScreenStateCopyWithImpl<$Res>;
+  $Res call({bool isBusy, FieldError? emailError, bool? submissionSuccess});
+}
 
-  @override
-  _$_FormScreenEventSubmit get _value =>
-      super._value as _$_FormScreenEventSubmit;
+/// @nodoc
+abstract class _$$_InitialCopyWith<$Res> {
+  factory _$$_InitialCopyWith(
+          _$_Initial value, $Res Function(_$_Initial) then) =
+      __$$_InitialCopyWithImpl<$Res>;
+}
 
-  @override
-  $Res call({
-    Object? email = freezed,
-  }) {
-    return _then(_$_FormScreenEventSubmit(
-      email == freezed
-          ? _value.email
-          : email // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// @nodoc
+abstract class _$$_StartedCopyWith<$Res> {
+  factory _$$_StartedCopyWith(
+          _$_Started value, $Res Function(_$_Started) then) =
+      __$$_StartedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 
 class _$_FormScreenEventSubmit implements _FormScreenEventSubmit {
-  const _$_FormScreenEventSubmit(this.email);
-
   @override
   final String email;
 
-  @override
-  String toString() {
-    return 'EmailValidationEvent.FormScreenEventSubmit(email: $email)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_FormScreenEventSubmit &&
-            const DeepCollectionEquality().equals(other.email, email));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(email));
+  const _$_FormScreenEventSubmit(this.email);
 
   @JsonKey(ignore: true)
   @override
@@ -244,34 +73,15 @@ class _$_FormScreenEventSubmit implements _FormScreenEventSubmit {
           this, _$identity);
 
   @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(String email) FormScreenEventSubmit,
-  }) {
-    return FormScreenEventSubmit(email);
-  }
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(email));
 
   @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String email)? FormScreenEventSubmit,
-  }) {
-    return FormScreenEventSubmit?.call(email);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(String email)? FormScreenEventSubmit,
-    required TResult orElse(),
-  }) {
-    if (FormScreenEventSubmit != null) {
-      return FormScreenEventSubmit(email);
-    }
-    return orElse();
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_FormScreenEventSubmit &&
+            const DeepCollectionEquality().equals(other.email, email));
   }
 
   @override
@@ -305,99 +115,163 @@ class _$_FormScreenEventSubmit implements _FormScreenEventSubmit {
     }
     return orElse();
   }
-}
 
-abstract class _FormScreenEventSubmit implements EmailValidationEvent {
-  const factory _FormScreenEventSubmit(final String email) =
-      _$_FormScreenEventSubmit;
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String email)? FormScreenEventSubmit,
+    required TResult orElse(),
+  }) {
+    if (FormScreenEventSubmit != null) {
+      return FormScreenEventSubmit(email);
+    }
+    return orElse();
+  }
 
-  String get email;
-  @JsonKey(ignore: true)
-  _$$_FormScreenEventSubmitCopyWith<_$_FormScreenEventSubmit> get copyWith =>
-      throw _privateConstructorUsedError;
+  @override
+  String toString() {
+    return 'EmailValidationEvent.FormScreenEventSubmit(email: $email)';
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(String email) FormScreenEventSubmit,
+  }) {
+    return FormScreenEventSubmit(email);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String email)? FormScreenEventSubmit,
+  }) {
+    return FormScreenEventSubmit?.call(email);
+  }
 }
 
 /// @nodoc
-mixin _$EmailValidationState {
+
+class _$_FormScreenState implements _FormScreenState {
+  @override
+  @JsonKey()
+  final bool isBusy;
+
+  @override
+  final FieldError? emailError;
+  @override
+  final bool? submissionSuccess;
+  const _$_FormScreenState(
+      {this.isBusy = false, this.emailError, this.submissionSuccess});
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_FormScreenStateCopyWith<_$_FormScreenState> get copyWith =>
+      __$$_FormScreenStateCopyWithImpl<_$_FormScreenState>(this, _$identity);
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(isBusy),
+      const DeepCollectionEquality().hash(emailError),
+      const DeepCollectionEquality().hash(submissionSuccess));
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_FormScreenState &&
+            const DeepCollectionEquality().equals(other.isBusy, isBusy) &&
+            const DeepCollectionEquality()
+                .equals(other.emailError, emailError) &&
+            const DeepCollectionEquality()
+                .equals(other.submissionSuccess, submissionSuccess));
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_FormScreenState value) FormScreenState,
+    required TResult Function(_Initial value) initial,
+  }) {
+    return FormScreenState(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Initial value)? initial,
+  }) {
+    return FormScreenState?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Initial value)? initial,
+    required TResult orElse(),
+  }) {
+    if (FormScreenState != null) {
+      return FormScreenState(this);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
+        FormScreenState,
+    TResult Function()? initial,
+    required TResult orElse(),
+  }) {
+    if (FormScreenState != null) {
+      return FormScreenState(isBusy, emailError, submissionSuccess);
+    }
+    return orElse();
+  }
+
+  @override
+  String toString() {
+    return 'EmailValidationState.FormScreenState(isBusy: $isBusy, emailError: $emailError, submissionSuccess: $submissionSuccess)';
+  }
+
+  @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initial,
     required TResult Function(
             bool isBusy, FieldError? emailError, bool? submissionSuccess)
         FormScreenState,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
-        FormScreenState,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
-        FormScreenState,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(_FormScreenState value) FormScreenState,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_FormScreenState value)? FormScreenState,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_FormScreenState value)? FormScreenState,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $EmailValidationStateCopyWith<$Res> {
-  factory $EmailValidationStateCopyWith(EmailValidationState value,
-          $Res Function(EmailValidationState) then) =
-      _$EmailValidationStateCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class _$EmailValidationStateCopyWithImpl<$Res>
-    implements $EmailValidationStateCopyWith<$Res> {
-  _$EmailValidationStateCopyWithImpl(this._value, this._then);
-
-  final EmailValidationState _value;
-  // ignore: unused_field
-  final $Res Function(EmailValidationState) _then;
-}
-
-/// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$EmailValidationStateCopyWithImpl<$Res>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
-      : super(_value, (v) => _then(v as _$_Initial));
+    required TResult Function() initial,
+  }) {
+    return FormScreenState(isBusy, emailError, submissionSuccess);
+  }
 
   @override
-  _$_Initial get _value => super._value as _$_Initial;
+  void when1(
+      {required Null Function() initial,
+      required Function(
+              bool isBusy, FieldError? emailError, bool? submissionSuccess)
+          FormScreenState}) {
+    // TODO: implement when1
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
+        FormScreenState,
+    TResult Function()? initial,
+  }) {
+    return FormScreenState?.call(isBusy, emailError, submissionSuccess);
+  }
 }
 
 /// @nodoc
@@ -406,9 +280,7 @@ class _$_Initial implements _Initial {
   const _$_Initial();
 
   @override
-  String toString() {
-    return 'EmailValidationState.initial()';
-  }
+  int get hashCode => runtimeType.hashCode;
 
   @override
   bool operator ==(dynamic other) {
@@ -417,37 +289,43 @@ class _$_Initial implements _Initial {
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)
-        FormScreenState,
+  TResult map<TResult extends Object?>({
+    required TResult Function(_FormScreenState value) FormScreenState,
+    required TResult Function(_Initial value) initial,
   }) {
-    return initial();
+    return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
-        FormScreenState,
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Initial value)? initial,
   }) {
-    return initial?.call();
+    return initial?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Initial value)? initial,
+    required TResult orElse(),
+  }) {
+    if (initial != null) {
+      return initial(this);
+    }
+    return orElse();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
     TResult Function(
             bool isBusy, FieldError? emailError, bool? submissionSuccess)?
         FormScreenState,
+    TResult Function()? initial,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -457,47 +335,259 @@ class _$_Initial implements _Initial {
   }
 
   @override
+  String toString() {
+    return 'EmailValidationState.initial()';
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)
+        FormScreenState,
+    required TResult Function() initial,
+  }) {
+    return initial();
+  }
+
+  @override
+  void when1(
+      {required Null Function() initial,
+      required Function(
+              bool isBusy, FieldError? emailError, bool? submissionSuccess)
+          FormScreenState}) {
+    // TODO: implement when1
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
+        FormScreenState,
+    TResult Function()? initial,
+  }) {
+    return initial?.call();
+  }
+}
+
+/// @nodoc
+
+class _$_Started implements _Started {
+  const _$_Started();
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_Started);
+  }
+
+  @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(_FormScreenState value) FormScreenState,
+    required TResult Function(_Started value) started,
+    required TResult Function(_FormScreenEventSubmit value)
+        FormScreenEventSubmit,
   }) {
-    return initial(this);
+    return started(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Started value)? started,
+    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
   }) {
-    return initial?.call(this);
+    return started?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Started value)? started,
+    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
     required TResult orElse(),
   }) {
-    if (initial != null) {
-      return initial(this);
+    if (started != null) {
+      return started(this);
     }
     return orElse();
   }
-}
 
-abstract class _Initial implements EmailValidationState {
-  const factory _Initial() = _$_Initial;
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String email)? FormScreenEventSubmit,
+    required TResult orElse(),
+  }) {
+    if (started != null) {
+      return started();
+    }
+    return orElse();
+  }
+
+  @override
+  String toString() {
+    return 'EmailValidationEvent.started()';
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(String email) FormScreenEventSubmit,
+  }) {
+    return started();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String email)? FormScreenEventSubmit,
+  }) {
+    return started?.call();
+  }
 }
 
 /// @nodoc
-abstract class _$$_FormScreenStateCopyWith<$Res> {
-  factory _$$_FormScreenStateCopyWith(
-          _$_FormScreenState value, $Res Function(_$_FormScreenState) then) =
-      __$$_FormScreenStateCopyWithImpl<$Res>;
-  $Res call({bool isBusy, FieldError? emailError, bool? submissionSuccess});
+mixin _$EmailValidationEvent {
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(_FormScreenEventSubmit value)
+        FormScreenEventSubmit,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(_FormScreenEventSubmit value)? FormScreenEventSubmit,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String email)? FormScreenEventSubmit,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function(String email) FormScreenEventSubmit,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function(String email)? FormScreenEventSubmit,
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+class _$EmailValidationEventCopyWithImpl<$Res>
+    implements $EmailValidationEventCopyWith<$Res> {
+  final EmailValidationEvent _value;
+
+  // ignore: unused_field
+  final $Res Function(EmailValidationEvent) _then;
+  _$EmailValidationEventCopyWithImpl(this._value, this._then);
+}
+
+/// @nodoc
+mixin _$EmailValidationState {
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_FormScreenState value) FormScreenState,
+    required TResult Function(_Initial value) initial,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Initial value)? initial,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_FormScreenState value)? FormScreenState,
+    TResult Function(_Initial value)? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
+        FormScreenState,
+    TResult Function()? initial,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)
+        FormScreenState,
+    required TResult Function() initial,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(
+            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
+        FormScreenState,
+    TResult Function()? initial,
+  }) =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+class _$EmailValidationStateCopyWithImpl<$Res>
+    implements $EmailValidationStateCopyWith<$Res> {
+  final EmailValidationState _value;
+
+  // ignore: unused_field
+  final $Res Function(EmailValidationState) _then;
+  _$EmailValidationStateCopyWithImpl(this._value, this._then);
+}
+
+/// @nodoc
+class __$$_FormScreenEventSubmitCopyWithImpl<$Res>
+    extends _$EmailValidationEventCopyWithImpl<$Res>
+    implements _$$_FormScreenEventSubmitCopyWith<$Res> {
+  __$$_FormScreenEventSubmitCopyWithImpl(_$_FormScreenEventSubmit _value,
+      $Res Function(_$_FormScreenEventSubmit) _then)
+      : super(_value, (v) => _then(v as _$_FormScreenEventSubmit));
+
+  @override
+  _$_FormScreenEventSubmit get _value =>
+      super._value as _$_FormScreenEventSubmit;
+
+  @override
+  $Res call({
+    Object? email = freezed,
+  }) {
+    return _then(_$_FormScreenEventSubmit(
+      email == freezed
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
@@ -535,115 +625,35 @@ class __$$_FormScreenStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-class _$_FormScreenState implements _FormScreenState {
-  const _$_FormScreenState(
-      {this.isBusy = false, this.emailError, this.submissionSuccess});
-
-  @override
-  @JsonKey()
-  final bool isBusy;
-  @override
-  final FieldError? emailError;
-  @override
-  final bool? submissionSuccess;
+class __$$_InitialCopyWithImpl<$Res>
+    extends _$EmailValidationStateCopyWithImpl<$Res>
+    implements _$$_InitialCopyWith<$Res> {
+  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+      : super(_value, (v) => _then(v as _$_Initial));
 
   @override
-  String toString() {
-    return 'EmailValidationState.FormScreenState(isBusy: $isBusy, emailError: $emailError, submissionSuccess: $submissionSuccess)';
-  }
+  _$_Initial get _value => super._value as _$_Initial;
+}
+
+/// @nodoc
+class __$$_StartedCopyWithImpl<$Res>
+    extends _$EmailValidationEventCopyWithImpl<$Res>
+    implements _$$_StartedCopyWith<$Res> {
+  __$$_StartedCopyWithImpl(_$_Started _value, $Res Function(_$_Started) _then)
+      : super(_value, (v) => _then(v as _$_Started));
 
   @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_FormScreenState &&
-            const DeepCollectionEquality().equals(other.isBusy, isBusy) &&
-            const DeepCollectionEquality()
-                .equals(other.emailError, emailError) &&
-            const DeepCollectionEquality()
-                .equals(other.submissionSuccess, submissionSuccess));
-  }
+  _$_Started get _value => super._value as _$_Started;
+}
 
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(isBusy),
-      const DeepCollectionEquality().hash(emailError),
-      const DeepCollectionEquality().hash(submissionSuccess));
+abstract class _FormScreenEventSubmit implements EmailValidationEvent {
+  const factory _FormScreenEventSubmit(final String email) =
+      _$_FormScreenEventSubmit;
 
   @JsonKey(ignore: true)
-  @override
-  _$$_FormScreenStateCopyWith<_$_FormScreenState> get copyWith =>
-      __$$_FormScreenStateCopyWithImpl<_$_FormScreenState>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)
-        FormScreenState,
-  }) {
-    return FormScreenState(isBusy, emailError, submissionSuccess);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
-        FormScreenState,
-  }) {
-    return FormScreenState?.call(isBusy, emailError, submissionSuccess);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(
-            bool isBusy, FieldError? emailError, bool? submissionSuccess)?
-        FormScreenState,
-    required TResult orElse(),
-  }) {
-    if (FormScreenState != null) {
-      return FormScreenState(isBusy, emailError, submissionSuccess);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(_FormScreenState value) FormScreenState,
-  }) {
-    return FormScreenState(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_FormScreenState value)? FormScreenState,
-  }) {
-    return FormScreenState?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_FormScreenState value)? FormScreenState,
-    required TResult orElse(),
-  }) {
-    if (FormScreenState != null) {
-      return FormScreenState(this);
-    }
-    return orElse();
-  }
+  _$$_FormScreenEventSubmitCopyWith<_$_FormScreenEventSubmit> get copyWith =>
+      throw _privateConstructorUsedError;
+  String get email;
 }
 
 abstract class _FormScreenState implements EmailValidationState {
@@ -652,10 +662,18 @@ abstract class _FormScreenState implements EmailValidationState {
       final FieldError? emailError,
       final bool? submissionSuccess}) = _$_FormScreenState;
 
-  bool get isBusy;
-  FieldError? get emailError;
-  bool? get submissionSuccess;
   @JsonKey(ignore: true)
   _$$_FormScreenStateCopyWith<_$_FormScreenState> get copyWith =>
       throw _privateConstructorUsedError;
+  FieldError? get emailError;
+  bool get isBusy;
+  bool? get submissionSuccess;
+}
+
+abstract class _Initial implements EmailValidationState {
+  const factory _Initial() = _$_Initial;
+}
+
+abstract class _Started implements EmailValidationEvent {
+  const factory _Started() = _$_Started;
 }
