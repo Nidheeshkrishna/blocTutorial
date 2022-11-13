@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_applicationgoogle_drive/CarasoulBloc/carasoul_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/Config/Route.dart';
 import 'package:flutter_applicationgoogle_drive/Const/AppThemes.dart';
-import 'package:flutter_applicationgoogle_drive/Pages/BottamnavigationUi.dart';
+import 'package:flutter_applicationgoogle_drive/Pages/ImageCordinatePointer.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/MyBlocObserver.dart';
 import 'package:flutter_applicationgoogle_drive/Pages/bloc/bloc/notification_count_bloc.dart';
 import 'package:flutter_applicationgoogle_drive/bloc/BottamNavigationBloc/bottam_navigation_bloc_bloc.dart';
@@ -123,7 +123,7 @@ class _MyAppState extends State<MyApp> {
               // AppWidget
 
               //  home: const SimpleIsolate(),
-              home: const HomePage(),
+              home: const ImageCordinatePointer(),
               navigatorKey: NavigationService.navigatorKey);
         });
       }),

@@ -93,6 +93,7 @@ dependencies:
   isar: ^2.5.0
   isar_flutter_libs: ^2.5.0
   pana: ^0.21.19
+  rect_getter: ^1.1.0
 
 
 
